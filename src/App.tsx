@@ -2,6 +2,7 @@ import * as React from 'react';
 import { css } from 'react-emotion';
 import ResumeContentType from './model/ResumeContentType';
 import ResumeHeader from './ResumeHeader';
+import AsideContent from './AsideContent';
 
 const json = require('./content/resume.json');
 
@@ -24,7 +25,8 @@ const headerStyle = css`
 
 const asideStyle = css`
     grid-area: aside;
-    background-color: #dd3;
+    border-right: 2px solid #ddd;
+    display: flex;
 `;
 
 const mainStyle = css`
@@ -43,7 +45,9 @@ class App extends React.Component {
                     title={resumeContent.summary.title}
                     summaryTags={resumeContent.summary.tags}
                 />
-                <aside className={asideStyle}>aside</aside>
+                <aside className={asideStyle}>
+                    <AsideContent resume={resumeContent} />
+                </aside>
                 <article className={mainStyle}>main</article>
             </div>
         );
