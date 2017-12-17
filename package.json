@@ -3,10 +3,12 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@types/react-icons": "2.2.4",
     "emotion": "8.0.12",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
     "react-emotion": "8.0.12",
+    "react-icons": "2.2.7",
     "react-scripts-ts": "2.8.0"
   },
   "scripts": {

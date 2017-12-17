@@ -1,5 +1,6 @@
 import * as React from 'react';
 import { css } from 'emotion';
+import { FaLinkedinSquare, FaGithub, FaEnvelope, FaPhone } from 'react-icons/lib/fa';
 import ResumeContentType from './model/ResumeContentType';
 import Paragraph from './Paragraph';
 
@@ -19,17 +20,42 @@ const imageStyle = css`
     width: 100%;
 `;
 
-const AsideContent = (props: Props) => (
-    <div className={container}>
-        <img src="./images/me.jpg" className={imageStyle} />
+const linksContainer = css`
+    display: flex;
+`;
 
-        <h3>Contact</h3>
-        <a href="mailto:jea@ads.fr">e-mail</a>
-        <a href="tel:+33 ">phone</a>
+const AsideContent = (props: Props) => {
+    const { phone, email }  = props.resume.identity;
+    const phoneNumberWithoutSpace = phone.replace(' ', '');
+    const { about, links } = props.resume.summary;
 
-        <h3>Presentation</h3>
-        <Paragraph text={props.resume.summary.about} />
-    </div>
-);
+    const linkedInLink = links.find(link => link.title === 'LinkedIn');
+    const githubLink = links.find(link => link.title === 'github');
+    return (
+        <div className={container}>
+            <img src="./images/me.jpg" className={imageStyle} />
+
+            <h3>Contact</h3>
+            <a href={`mailto:${email}`}><FaEnvelope />&nbsp;{email}</a>
+            <a href={`tel:${phoneNumberWithoutSpace}`}><FaPhone />&nbsp;{phone}</a>
+
+            <h3>Presentation</h3>
+            <Paragraph text={about} />
+
+            <div className={linksContainer}>
+                {linkedInLink &&
+                    <a className={css`flex: 1`} href={linkedInLink.url}>
+                        <FaLinkedinSquare size={40}/>
+                    </a>
+                }
+                {githubLink &&
+                    <a className={css`flex: 1`} href={githubLink.url}>
+                        <FaGithub size={40}/>
+                    </a>
+                }
+            </div>
+        </div>
+    );
+};
 
 export default AsideContent;

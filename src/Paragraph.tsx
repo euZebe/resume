@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { Fragment } from 'react';
 
 interface Props {
     text: string;
@@ -12,9 +13,9 @@ interface Props {
 const Paragraph = ({text}: Props) => {
     const blocks = text.split('\n');
     return (
-        <p>
+        <Fragment>
             {blocks.map((b, index) => <p key={index}>{b}</p>)}
-        </p>
+        </Fragment>
     );
 };
 

@@ -13,7 +13,7 @@ const containerStyle = css`
     height: 100vh;
     width: 100vw;
     display: grid;
-    grid-template-columns: 250px 1fr;
+    grid-template-columns: 280px 1fr;
     grid-template-areas: 
         "aside header"
         "aside content"
