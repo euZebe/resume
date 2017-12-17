@@ -13,6 +13,23 @@ const containerStyle = css`
     width: 100vw;
     display: grid;
     grid-template-columns: 250px 1fr;
+    grid-template-areas: 
+        "aside header"
+        "aside content"
+`;
+
+const headerStyle = css`
+    grid-area: header;
+`;
+
+const asideStyle = css`
+    grid-area: aside;
+    background-color: #dd3;
+`;
+
+const mainStyle = css`
+    grid-area: content;
+    background-color: #3dd;
 `;
 
 class App extends React.Component {
@@ -20,10 +37,14 @@ class App extends React.Component {
     render() {
         return (
             <div className={containerStyle}>
-                <ResumeHeader identity={resumeContent.identity} />
-                <div id="contact" />
-                <aside style={{backgroundColor: '#dd3'}}>aside</aside>
-                <article style={{backgroundColor: '#3dd'}}>main</article>
+                <ResumeHeader
+                    className={headerStyle}
+                    name={resumeContent.identity.name}
+                    title={resumeContent.summary.title}
+                    summaryTags={resumeContent.summary.tags}
+                />
+                <aside className={asideStyle}>aside</aside>
+                <article className={mainStyle}>main</article>
             </div>
         );
     }
