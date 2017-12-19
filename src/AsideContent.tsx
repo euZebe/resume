@@ -27,7 +27,8 @@ const linksContainer = css`
 const AsideContent = (props: Props) => {
     const { phone, email }  = props.resume.identity;
     const phoneNumberWithoutSpace = phone.replace(' ', '');
-    const { about, links } = props.resume.summary;
+    const { about } = props.resume.summary;
+    const { links } = props.resume;
 
     const linkedInLink = links.find(link => link.title === 'LinkedIn');
     const githubLink = links.find(link => link.title === 'github');

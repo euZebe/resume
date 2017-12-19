@@ -1,5 +1,6 @@
 import Identity from './Identity';
 import Summary from './Summary';
+import Link from './Link';
 
 export default class ResumeContentType {
 
@@ -7,6 +8,7 @@ export default class ResumeContentType {
         return Object.setPrototypeOf(json, ResumeContentType.prototype);
     }
 
-    constructor(public identity: Identity, public summary: Summary) { }
+    constructor(public identity: Identity, public summary: Summary, public links: Link[]) {
+    }
 
 }

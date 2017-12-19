@@ -1,20 +1,31 @@
 import * as React from 'react';
 import { Fragment } from 'react';
+import { css } from 'emotion';
 
 interface Props {
     text: string;
+    className?: string;
 }
+
+const reducedMarginTop = css`
+    margin-bottom: 0.2rem;    
+`;
 
 /**
  * replaces \n by <p>
  * @param {string} text
  * @constructor
  */
-const Paragraph = ({text}: Props) => {
+const Paragraph = ({text, className}: Props) => {
     const blocks = text.split('\n');
+    const style = className === 'reducedMarginTop' ? reducedMarginTop : undefined;
     return (
         <Fragment>
-            {blocks.map((b, index) => <p key={index}>{b}</p>)}
+            {blocks.map((block, index) => (
+                <p key={index} className={style}>
+                    {block}
+                </p>
+            ))}
         </Fragment>
     );
 };

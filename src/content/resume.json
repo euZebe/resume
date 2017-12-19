@@ -4,6 +4,18 @@
 		"email": "jean.martineau@gmail.com",
 		"phone": "+33 7 60 97 00 44"
 	},
+	"links": [
+		{
+			"title": "github",
+			"url": "https://github.com/euzebe",
+			"icon": ""
+		},
+		{
+			"title": "LinkedIn",
+			"url": "https://www.linkedin.com/in/jean-martineau-figuette/",
+			"icon": ""
+		}
+	],
 	"summary": {
 		"title": "Freelance Java & JavaScript senior engineer, technical leader",
 		"tags": [
@@ -13,22 +25,10 @@
 			"Test Driven Development",
 			"continuous learner"
 		],
-		"links": [
-			{
-				"title": "github",
-				"url": "https://github.com/euzebe",
-				"icon": ""
-			},
-			{
-				"title": "LinkedIn",
-				"url": "https://www.linkedin.com/in/jean-martineau-figuette/",
-				"icon": ""
-			}
-		],
-		"about": "Full stack web developer, currently working mainly on React, React Native and NodeJS projects, but having also skills in Angular and Java.\nPartisan of automating all that can be done, including tests at every level.\nParticipant and organizer of software craftsmanship events.",
+		"about": "Full stack web engineer, currently working mainly on React, React Native and NodeJS projects, but having also skills in Angular and Java.\nPartisan of automating all that can be done, including tests at every level.\nParticipant and organizer of software craftsmanship events.",
 		"jobs": [
 			{
-				"title": "Full Stack JavaScript & Java Engineer",
+				"title": "Full stack JavaScript & Java engineer",
 				"client": "Cegedim",
 				"from": "april 2017",
 				"to": "january 2018",
@@ -36,16 +36,33 @@
 				"accomplishments": [
 					{
 						"description": "As a member of a 10-person agile team, I contributed to the development of API and UI micro-services for Cegedim's next health insurance solution.\n\nworking environment:\n- Test Driven Development,\n- Pair-programming,\n- Continuous integration and delivery,\n- Automated tests on both API and UI parts,\n- Agile methodology",
-						"tags": ["React", "Redux", "NodeJS", "MongoDB", "SpringBoot", "CucumberTests", "ContinuousDelivery", "PairProgramming", "Agile", "TDD"]
+						"tags": [
+							"React",
+							"Redux",
+							"NodeJS",
+							"MongoDB",
+							"SpringBoot",
+							"CucumberTests",
+							"ContinuousDelivery",
+							"PairProgramming",
+							"Agile",
+							"TDD"
+						]
 					},
 					{
 						"description": "I implemented a cross-platform mobile app for optic patients, including deployment to Android Play Store, using React Native,\nthe associated web portal for opticians\nthe corresponding NodeJS back-end",
-						"tags": ["MobileDevelopment", "ReactNative", "NodeJS", "React", "MobX"]
+						"tags": [
+							"MobileDevelopment",
+							"ReactNative",
+							"NodeJS",
+							"React",
+							"MobX"
+						]
 					}
 				]
 			},
 			{
-				"title": "JEE back-end developer",
+				"title": "JEE back-end engineer",
 				"client": "Lyra Network",
 				"from": "october 2016",
 				"to": "march 2017",
@@ -53,12 +70,18 @@
 				"accomplishments": [
 					{
 						"description": "As a consultant on behalf of Celad, I developed a connector between PayZen (Lyra's online payment solution) and south-american payment methods:\n- analysis of south-american payment methods API\n- implementation of the connector\n- integration to PayZen",
-						"tags": ["Java8", "JEE", "JBoss", "Agile", "TDD"]
+						"tags": [
+							"Java8",
+							"JEE",
+							"JBoss",
+							"Agile",
+							"TDD"
+						]
 					}
 				]
 			},
 			{
-				"title": "JEE lead developer",
+				"title": "JEE lead engineer",
 				"client": "Natixis",
 				"from": "september 2013",
 				"to": "september 2016",
@@ -66,8 +89,20 @@
 				"accomplishments": [
 					{
 						"description": "As a consultant on behalf of Celad, I was in charge of technical coaching and development in a 5-member team, creating web applications for the Credit department (CCO).",
-						"tags": ["Java8", "Spring", "ApacheCamel", "maven", "REST", "Soap", "JEE", "EJB3", "JPA",
-							"JSF", "Oracle", "SpringBatch"]
+						"tags": [
+							"Java8",
+							"Spring",
+							"ApacheCamel",
+							"maven",
+							"REST",
+							"Soap",
+							"JEE",
+							"EJB3",
+							"JPA",
+							"JSF",
+							"Oracle",
+							"SpringBatch"
+						]
 					}
 				]
 			},
@@ -93,11 +128,31 @@
 				"accomplishments": [
 					{
 						"description": "Assigned to PGIH department (PGIH is an ERP for french hospitals), I was in charge of developing and managing 300 to 3000 man-days projects, 3 to 5 persons.",
-						"tags": ["JEE", "Hibernate", "GWT", "Oracle", "maven", "tomcat", "JBoss", "Jenkins", "SVN"]
+						"tags": [
+							"JEE",
+							"Hibernate",
+							"GWT",
+							"Oracle",
+							"maven",
+							"tomcat",
+							"JBoss",
+							"Jenkins",
+							"SVN"
+						]
 					},
 					{
 						"description": "Assigned to PGIH department (PGIH is an ERP for french hospitals), I managed ESPIC project: a top-priority project of 15 man-years over 18 months\nconsisting in the evolution of PGIH to fit private health establishments,\nAchievements: on-time delivery, quality and client satisfaction objectives achieved.",
-						"tags": ["JEE", "Hibernate", "GWT", "Oracle", "maven", "tomcat", "JBoss", "Jenkins", "SVN"]
+						"tags": [
+							"JEE",
+							"Hibernate",
+							"GWT",
+							"Oracle",
+							"maven",
+							"tomcat",
+							"JBoss",
+							"Jenkins",
+							"SVN"
+						]
 					}
 				]
 			},
@@ -110,7 +165,14 @@
 				"accomplishments": [
 					{
 						"description": "On behalf of Artware, I was in charge of new web application development in 3-to-6-member teams.",
-						"tags": ["JEE", "Hibernate", "Struts", "Spring", "Oracle", "JUnit"]
+						"tags": [
+							"JEE",
+							"Hibernate",
+							"Struts",
+							"Spring",
+							"Oracle",
+							"JUnit"
+						]
 					}
 				]
 			}
@@ -129,5 +191,76 @@
 				"to": "december 2017"
 			}
 		]
-	}
+	},
+	"realisations": [
+		{
+			"name": "Scores",
+			"tags": [
+				"ReactNative",
+				"MobX",
+				"Android Play Store"
+			],
+			"context": "Scores Mobile app sheet app re-written in ReactNative, deployed on Android Play Store.",
+			"objectives": [
+				"Enhance my abilities in cross-platform development",
+				"experiment Android app delivery",
+				"improve my skills with MobX"
+			],
+			"links": [
+				{
+					"name": "Android play store page",
+					"url": "https://play.google.com/store/apps/details?id=me.euzebe.scores"
+				}
+			]
+		},
+		{
+			"name": "Sumofages",
+			"tags": [
+				"React",
+				"Jest",
+				"e2eTests",
+				"CypressIO",
+				"ContinuousIntegration",
+				"ContinuousDelivery"
+			],
+			"context": "Web application to sum ages of several persons and give the date when this sum reaches the expected age.\n\nSplitted in a NPM library for computation and a single page application. Both are in continuous integration, UI is in continuous delivery.\n\nUnit tests with Jest, end-to-end tests with Cypress.io",
+			"objectives": [
+				"publish an NPM library",
+				"practice e2e tests with Cypress.io",
+				"practice Flow type for typed React"
+			],
+			"links": [
+				{
+					"name": "app",
+					"url": "euzebe.github.io/sumofages"
+				},
+				{
+					"name": "repository",
+					"url": "https://github.com/sumofages"
+				},
+				{
+					"name": "NPM library",
+					"url": "https://www.npmjs.com/package/sumofages-lib"
+				}
+			]
+		},
+		{
+			"name": "Scores",
+			"context": "Hybrid mobile application that allows you to mark scores of different board games.",
+			"tags": [
+				"Angular",
+				"Ionic",
+				"TypeScript",
+				"Jasmine"
+			],
+			"objectives": [
+				"experiment Angular 2",
+				"experiment TypeScript",
+				"experiment front-end testing"
+			]
+		},
+		{
+			"name": "meLe"
+		}
+	]
 }

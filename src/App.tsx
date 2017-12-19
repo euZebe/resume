@@ -3,6 +3,7 @@ import { css } from 'react-emotion';
 import ResumeContentType from './model/ResumeContentType';
 import ResumeHeader from './ResumeHeader';
 import AsideContent from './AsideContent';
+import Main from './Main';
 
 const json = require('./content/resume.json');
 
@@ -11,7 +12,7 @@ const resumeContent = ResumeContentType.desserialize(json);
 const containerStyle = css`
     text-align: center;
     height: 100vh;
-    width: 100vw;
+    width: 90vw;
     display: grid;
     grid-template-columns: 280px 1fr;
     grid-template-areas: 
@@ -31,7 +32,6 @@ const asideStyle = css`
 
 const mainStyle = css`
     grid-area: content;
-    background-color: #3dd;
 `;
 
 class App extends React.Component {
@@ -48,7 +48,9 @@ class App extends React.Component {
                 <aside className={asideStyle}>
                     <AsideContent resume={resumeContent} />
                 </aside>
-                <article className={mainStyle}>main</article>
+                <article className={mainStyle}>
+                    <Main {...resumeContent} />
+                </article>
             </div>
         );
     }
