@@ -22,7 +22,8 @@ function renderJob(job: Job): ReactChild {
         <div key={job.from} className={jobContainer}>
             <h3>{job.title}</h3>
             <h4>{client}</h4>
-            {job.accomplishments && job.accomplishments.map((a, index) => <AccomplishmentComponent key={index} {...a} />)}
+            {job.accomplishments
+            && job.accomplishments.map((a, index) => <AccomplishmentComponent key={index} {...a} />)}
         </div>
     );
 }
