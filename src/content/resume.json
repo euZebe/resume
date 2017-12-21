@@ -208,7 +208,7 @@
 			],
 			"links": [
 				{
-					"name": "Android play store page",
+					"title": "Android play store page",
 					"url": "https://play.google.com/store/apps/details?id=me.euzebe.scores"
 				}
 			]
@@ -231,15 +231,15 @@
 			],
 			"links": [
 				{
-					"name": "app",
-					"url": "euzebe.github.io/sumofages"
+					"title": "app",
+					"url": "https://euzebe.github.io/sumofages"
 				},
 				{
-					"name": "repository",
-					"url": "https://github.com/sumofages"
+					"title": "repository",
+					"url": "https://github.com/euzebe/sumofages"
 				},
 				{
-					"name": "NPM library",
+					"title": "NPM library",
 					"url": "https://www.npmjs.com/package/sumofages-lib"
 				}
 			]

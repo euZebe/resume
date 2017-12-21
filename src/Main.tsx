@@ -9,6 +9,8 @@ import Realisation from './model/Realisation';
 import Paragraph from './Paragraph';
 import TagsContainer from './TagsContainer';
 import LightTag from './LightTag';
+import Link from './model/Link';
+import Anchor from './Anchor';
 
 const experiencesContainer = css`
     text-align: start;
@@ -48,13 +50,11 @@ function renderRealisation(realisation: Realisation): ReactChild {
             <section>
                 {realisation.context && <Paragraph text={realisation.context} />}
                 {realisation.objectives && renderObjectives(realisation.objectives)}
+                {realisation.links && renderProjectLinks(realisation.links)}
                 <TagsContainer>
                     {realisation.tags &&
-
-                        realisation.tags.map(t => (
-                            <LightTag>{t}</LightTag>
-                        ))}
-
+                        realisation.tags.map(t => (<LightTag>{t}</LightTag>))
+                    }
                 </TagsContainer>
             </section>
         </div>
@@ -66,7 +66,20 @@ function renderObjectives(objectives: string[]): ReactChild {
         <React.Fragment>
             <h4>Objectives</h4>
             <ul>
-                {objectives.map(o => <li key={o}>{o}</li>)}
+                {objectives.map(o => (<li>{o}</li>))}
+            </ul>
+        </React.Fragment>
+    );
+}
+
+function renderProjectLinks(links: Link[]): ReactChild {
+    return (
+        <React.Fragment>
+            <h4>Links</h4>
+            <ul>
+                {links.map(l => (
+                    <Anchor link={l.url} label={l.title} />
+                ))}
             </ul>
         </React.Fragment>
     );
