@@ -260,7 +260,19 @@
 			]
 		},
 		{
-			"name": "meLe"
+			"name": "meLe",
+			"context": "Web application for draws, which picks a combination {participant, assigned} among all possible combinations, given restrictive criteria.",
+			"tags": [
+				"AngularJS",
+				"NodeJS",
+				"CouchDB",
+				"Yeoman",
+				"npm",
+				"Git",
+				"linux",
+				"Jacop",
+				"openshift"
+			]
 		}
 	]
 }
