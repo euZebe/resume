@@ -1,8 +1,10 @@
 import * as React from 'react';
 import { css } from 'emotion';
+import styled from 'react-emotion';
 import { FaLinkedinSquare, FaGithub, FaEnvelope, FaPhone } from 'react-icons/lib/fa';
 import ResumeContentType from './model/ResumeContentType';
 import Paragraph from './Paragraph';
+import Anchor from './Anchor';
 
 interface Props {
     resume: ResumeContentType;
@@ -22,6 +24,15 @@ const imageStyle = css`
 
 const linksContainer = css`
     display: flex;
+`;
+
+const AnchorsContainer = styled('div')`
+    position: fixed;
+    bottom: 10px;
+    background-color: white;
+    padding: 0.2rem 1rem 0.2rem 1rem;
+    border-radius: 1rem;
+    border: 1px solid grey;
 `;
 
 const AsideContent = (props: Props) => {
@@ -55,6 +66,11 @@ const AsideContent = (props: Props) => {
                     </a>
                 }
             </div>
+            <AnchorsContainer>
+                <Anchor link="#experiences" label="Experiences" />
+                <Anchor link="#side-projects" label="Side projects" />
+                <Anchor link="#formations" label="Formations" />
+            </AnchorsContainer>
         </div>
     );
 };

@@ -4,6 +4,11 @@ import ResumeContentType from './model/ResumeContentType';
 import Job from './model/Job';
 import { ReactChild } from 'react';
 import AccomplishmentComponent from './AccomplishmentComponent';
+import Formation from './model/Formation';
+import Realisation from './model/Realisation';
+import Paragraph from './Paragraph';
+import TagsContainer from './TagsContainer';
+import LightTag from './LightTag';
 
 const experiencesContainer = css`
     text-align: start;
@@ -12,14 +17,11 @@ const experiencesContainer = css`
     width: 90%;
 `;
 
-const jobContainer = css`
-`;
-
 function renderJob(job: Job): ReactChild {
     const to = job.to ? ` to ${job.to}` : null;
     const client = `${job.client} · ${job.from} ${to}`;
     return (
-        <div key={job.from} className={jobContainer}>
+        <div key={job.from}>
             <h3>{job.title}</h3>
             <h4>{client}</h4>
             {job.accomplishments
@@ -28,13 +30,60 @@ function renderJob(job: Job): ReactChild {
     );
 }
 
+function renderFormation(formation: Formation): ReactChild {
+    const to = formation.to ? ` to ${formation.to}` : null;
+    const client = `${formation.organizer} · ${formation.from} ${to}`;
+    return (
+        <div key={formation.from}>
+            <h3>{formation.title}</h3>
+            <h4>{client}</h4>
+        </div>
+    );
+}
+
+function renderRealisation(realisation: Realisation): ReactChild {
+    return (
+        <div>
+            <h3>{realisation.name}</h3>
+            <section>
+                {realisation.context && <Paragraph text={realisation.context} />}
+                {realisation.objectives && renderObjectives(realisation.objectives)}
+                <TagsContainer>
+                    {realisation.tags &&
+
+                        realisation.tags.map(t => (
+                            <LightTag>{t}</LightTag>
+                        ))}
+
+                </TagsContainer>
+            </section>
+        </div>
+    );
+}
+
+function renderObjectives(objectives: string[]): ReactChild {
+    return (
+        <React.Fragment>
+            <h4>Objectives</h4>
+            <ul>
+                {objectives.map(o => <li key={o}>{o}</li>)}
+            </ul>
+        </React.Fragment>
+    );
+}
+
 class Main extends React.Component<ResumeContentType> {
     render() {
-        const {jobs} = this.props.summary;
+        const { jobs, formations } = this.props.summary;
+        const { realisations } = this.props;
         return (
             <div className={experiencesContainer}>
                 <h1>EXPERIENCES</h1>
                 {jobs.map(renderJob)}
+                <h1 id="side-projects">SIDE PROJECTS</h1>
+                {realisations.map(renderRealisation)}
+                <h1 id="formations">FORMATIONS</h1>
+                {formations.map(renderFormation)}
             </div>
         );
     }
