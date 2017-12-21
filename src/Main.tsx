@@ -36,10 +36,10 @@ function renderFormation(formation: Formation): ReactChild {
     const to = formation.to ? ` to ${formation.to}` : null;
     const client = `${formation.organizer} · ${formation.from} ${to}`;
     return (
-        <div key={formation.from}>
+        <section key={formation.from}>
             <h3>{formation.title}</h3>
             <h4>{client}</h4>
-        </div>
+        </section>
     );
 }
 
