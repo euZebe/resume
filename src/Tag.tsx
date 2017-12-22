@@ -12,6 +12,7 @@ const tagStyle = css`
     margin-left: 0.5rem;
     padding: 0.1rem 0.4rem 0.1rem 0.4rem;
     border-radius: 1rem;
+    white-space: nowrap;
 `;
 
 const Tag = (props: Props) => (
