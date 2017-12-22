@@ -35,7 +35,7 @@
 				"icon": "",
 				"accomplishments": [
 					{
-						"description": "As a member of a 10-person agile team, I contributed to the development of API and UI micro-services for Cegedim's next health insurance solution.\n\nworking environment:\n- Test Driven Development,\n- Pair-programming,\n- Continuous integration and delivery,\n- Automated tests on both API and UI parts,\n- Agile methodology",
+						"description": "As a member of a 10-person agile team, I contributed to the development of API and UI micro-services for Cegedim's next health insurance solution.\n\nWorking environment:\n- Test Driven Development,\n- Pair-programming,\n- Continuous integration and delivery,\n- Automated tests on both API and UI parts,\n- Agile methodology",
 						"tags": [
 							"React",
 							"Redux",

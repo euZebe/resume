@@ -22,8 +22,33 @@ const imageStyle = css`
     width: 100%;
 `;
 
-const linksContainer = css`
+const LinksContainer = styled('div')`
     display: flex;
+    
+    @media print {
+        flex-direction: column;
+    }
+`;
+
+const BigIconLink = styled('a')`
+    flex: 1;
+    text-align: center;
+    > label {
+        display: none;
+    }
+    
+    @media print {
+        text-align: left;
+                
+        > svg {
+            display: none;
+        }
+        
+        > label {
+            display: unset;
+            font-size: 0.8rem;
+        }
+    }
 `;
 
 const AnchorsContainer = styled('div')`
@@ -33,6 +58,10 @@ const AnchorsContainer = styled('div')`
     padding: 0.2rem 1rem 0.2rem 1rem;
     border-radius: 1rem;
     border: 1px solid grey;
+    
+    @media print {
+        display: none;
+    }
 `;
 
 const AsideContent = (props: Props) => {
@@ -48,25 +77,39 @@ const AsideContent = (props: Props) => {
             <img src="./images/me.jpg" className={imageStyle} />
 
             <h3>Contact</h3>
-            <a href={`mailto:${email}`}><FaEnvelope />&nbsp;{email}</a>
-            <a href={`tel:${phoneNumberWithoutSpace}`}><FaPhone />&nbsp;{phone}</a>
+            <LinksContainer>
+
+                <BigIconLink href={`mailto:${email}`}>
+                    <FaEnvelope size={30}/>
+                    <label>{email}</label> {/* visible only in print mode */}
+                </BigIconLink>
+
+                <BigIconLink href={`tel:${phoneNumberWithoutSpace}`}>
+                    <FaPhone size={30}/>
+                    <label>{phone}</label> {/* visible only in print mode */}
+                </BigIconLink>
+
+            </LinksContainer>
 
             <h3>Presentation</h3>
             <Paragraph text={about} />
 
-            <div className={linksContainer}>
+            <LinksContainer>
                 {linkedInLink &&
-                    <a className={css`flex: 1`} href={linkedInLink.url}>
-                        <FaLinkedinSquare size={40}/>
-                    </a>
+                    <BigIconLink href={linkedInLink.url}>
+                        <FaLinkedinSquare size={30}/>
+                        <label>{linkedInLink.url.replace('https://', '')}</label>
+                    </BigIconLink>
                 }
                 {githubLink &&
-                    <a className={css`flex: 1`} href={githubLink.url}>
-                        <FaGithub size={40}/>
-                    </a>
+                    <BigIconLink href={githubLink.url}>
+                        <FaGithub size={30}/>
+                        <label>{githubLink.url.replace('https://', '')}</label>
+                    </BigIconLink>
                 }
-            </div>
-            <AnchorsContainer>
+            </LinksContainer>
+
+            <AnchorsContainer id="innerLinks">
                 <Anchor link="#experiences" label="Experiences" />
                 <Anchor link="#side-projects" label="Side projects" />
                 <Anchor link="#formations" label="Formations" />

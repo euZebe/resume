@@ -1,6 +1,11 @@
 body {
     margin: 0;
     font-family: "Trebuchet MS", sans-serif;
+    background-color: gray;
+}
+div#root {
+    display: flex;
+    justify-content: center;
 }
 
 h1 {
