@@ -43,13 +43,18 @@ const Container = styled('div')`
         grid-template-columns: 200px 1fr;
         width: 100%;
     }
+    
+    @media screen and (max-width: 1000px) {
+        grid-template-areas: "header" "aside" "content";
+        grid-template-columns: 1fr;
+    }
 `;
 
 class App extends React.Component {
 
     render() {
         return (
-            <Container id="experiences">
+            <Container>
                 <ResumeHeader
                     className={headerStyle}
                     name={resumeContent.identity.name}

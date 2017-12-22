@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { css } from 'emotion';
+import styled from 'react-emotion';
 import ResumeContentType from './model/ResumeContentType';
 import Job from './model/Job';
 import { ReactChild } from 'react';
@@ -12,11 +12,15 @@ import LightTag from './LightTag';
 import Link from './model/Link';
 import Anchor from './Anchor';
 
-const experiencesContainer = css`
+const ExperiencesContainer = styled('div')`
     text-align: start;
     padding-left: 1rem;
     margin-top: 2rem;
     width: 90%;
+`;
+
+const Footer = styled('div')`
+    margin-bottom: 4rem;
 `;
 
 function renderJob(job: Job): ReactChild {
@@ -90,14 +94,15 @@ class Main extends React.Component<ResumeContentType> {
         const { jobs, formations } = this.props.summary;
         const { realisations } = this.props;
         return (
-            <div className={experiencesContainer}>
-                <h1>EXPERIENCES</h1>
+            <ExperiencesContainer>
+                <h1  id="experiences">EXPERIENCES</h1>
                 {jobs.map(renderJob)}
                 <h1 id="side-projects">SIDE PROJECTS</h1>
                 {realisations.map(renderRealisation)}
                 <h1 id="formations">FORMATIONS</h1>
                 {formations.map(renderFormation)}
-            </div>
+                <Footer />
+            </ExperiencesContainer>
         );
     }
 }

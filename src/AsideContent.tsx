@@ -1,5 +1,4 @@
 import * as React from 'react';
-import { css } from 'emotion';
 import styled from 'react-emotion';
 import { FaLinkedinSquare, FaGithub, FaEnvelope, FaPhone } from 'react-icons/lib/fa';
 import ResumeContentType from './model/ResumeContentType';
@@ -10,7 +9,7 @@ interface Props {
     resume: ResumeContentType;
 }
 
-const container = css`
+const Container = styled('div')`
     margin: 20px;
     flex: 1;
     display: flex;
@@ -18,7 +17,7 @@ const container = css`
     text-align: left;
 `;
 
-const imageStyle = css`
+const Image = styled('img')`
     width: 100%;
     
     @media screen and (max-width: 1000px) {
@@ -31,6 +30,10 @@ const H3 = styled('h3')`
     margin-top: 0.5rem;
     padding-top: 0.5rem;
     border-top: 1px solid #ddd;
+    
+    @media screen and (max-width:1000px) {
+        display: none;
+    }
 `;
 
 const LinksContainer = styled('div')`
@@ -73,6 +76,14 @@ const AnchorsContainer = styled('div')`
     @media print {
         display: none;
     }
+   
+    @media screen and (max-width: 1000px) {
+        border: none;
+        background-color: #ccc;
+        padding: 0.2rem 0.5rem 0.2rem 0.5rem;
+        right: 5px;
+        bottom: 5px;
+    }
 `;
 
 const AsideContent = (props: Props) => {
@@ -84,8 +95,14 @@ const AsideContent = (props: Props) => {
     const linkedInLink = links.find(link => link.title === 'LinkedIn');
     const githubLink = links.find(link => link.title === 'github');
     return (
-        <div className={container}>
-            <img src="./images/me.jpg" className={imageStyle} />
+        <Container>
+
+            <span>
+                <Image src="./images/me.jpg" />
+            </span>
+
+            <H3>Presentation</H3>
+            <Paragraph text={about} />
 
             <H3>Contact</H3>
             <LinksContainer>
@@ -100,9 +117,6 @@ const AsideContent = (props: Props) => {
                 </BigIconLink>
 
             </LinksContainer>
-
-            <H3>Presentation</H3>
-            <Paragraph text={about} />
 
             <H3>Links</H3>
             <LinksContainer>
@@ -125,7 +139,7 @@ const AsideContent = (props: Props) => {
                 <Anchor link="#side-projects" label="Side projects" />
                 <Anchor link="#formations" label="Formations" />
             </AnchorsContainer>
-        </div>
+        </Container>
     );
 };
 
