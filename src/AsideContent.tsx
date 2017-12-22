@@ -20,6 +20,17 @@ const container = css`
 
 const imageStyle = css`
     width: 100%;
+    
+    @media screen and (max-width: 1000px) {
+        width: auto;
+        height: 100px;
+    }
+`;
+
+const H3 = styled('h3')`
+    margin-top: 0.5rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid #ddd;
 `;
 
 const LinksContainer = styled('div')`
@@ -76,9 +87,8 @@ const AsideContent = (props: Props) => {
         <div className={container}>
             <img src="./images/me.jpg" className={imageStyle} />
 
-            <h3>Contact</h3>
+            <H3>Contact</H3>
             <LinksContainer>
-
                 <BigIconLink href={`mailto:${email}`}>
                     <FaEnvelope size={30}/>
                     <label>{email}</label> {/* visible only in print mode */}
@@ -91,9 +101,10 @@ const AsideContent = (props: Props) => {
 
             </LinksContainer>
 
-            <h3>Presentation</h3>
+            <H3>Presentation</H3>
             <Paragraph text={about} />
 
+            <H3>Links</H3>
             <LinksContainer>
                 {linkedInLink &&
                     <BigIconLink href={linkedInLink.url}>
