@@ -28,6 +28,24 @@
 		"about": "Full stack web engineer, currently working mainly on React, React Native and NodeJS projects, but having also skills in Angular and Java.\nPartisan of automating all that can be done, including tests at every level.\nParticipant and organizer of software craftsmanship events.",
 		"jobs": [
 			{
+				"title": "Freelance front-end developer",
+				"client": "Atos / CNES",
+				"from": "february 2018",
+				"to": "",
+				"icon": "",
+				"accomplishments": [
+					{
+						"description": "Working for ISIS, a widely-customizable standalone application for monitoring satellite missions, I implement UI features.\nI also coach the team on tests writing and Git workflow applied to customer requirements.",
+						"tags": [
+							"React",
+							"Redux",
+							"Electron",
+							"TDD"
+						]
+					}
+				]
+			},
+			{
 				"title": "Full stack JavaScript & Java engineer",
 				"client": "Cegedim",
 				"from": "april 2017",
