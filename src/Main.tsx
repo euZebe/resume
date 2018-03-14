@@ -24,8 +24,8 @@ const Footer = styled('div')`
 `;
 
 function renderJob(job: Job): ReactChild {
-    const to = job.to ? ` to ${job.to}` : null;
-    const client = `${job.client} · ${job.from} ${to}`;
+    const to = job.to ? ` to ${job.to}` : '';
+    const client = `${job.client} · from ${job.from} ${to}`;
     return (
         <div key={job.from}>
             <h3>{job.title}</h3>
@@ -37,7 +37,7 @@ function renderJob(job: Job): ReactChild {
 }
 
 function renderFormation(formation: Formation): ReactChild {
-    const to = formation.to ? ` to ${formation.to}` : null;
+    const to = formation.to ? ` to ${formation.to}` : '';
     const client = `${formation.organizer} · ${formation.from} ${to}`;
     return (
         <section key={formation.from}>
