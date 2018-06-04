@@ -1,0 +1,300 @@
+{
+  "identity": {
+    "name": "Jean Martineau-Figuette",
+    "email": "jean.martineau@axiome.com",
+    "phone": "+33 7 60 97 00 44"
+  },
+  "links": [
+    {
+      "title": "github",
+      "url": "https://github.com/euzebe",
+      "icon": ""
+    },
+    {
+      "title": "LinkedIn",
+      "url": "https://www.linkedin.com/in/jean-martineau-figuette/",
+      "icon": ""
+    },
+    {
+      "title": "Talk React Toulouse",
+      "url": "https://www.youtube.com/watch?v=gwHr12YK9K0",
+      "icon": ""
+    }
+  ],
+  "summary": {
+    "title": "Ingénieur sénior en développement web full-stack",
+    "tags": [
+      "React",
+      "NodeJS",
+      "MongoDB",
+      "Test Driven Development",
+      "continuous learner"
+    ],
+    "about": "Développeur web full stack, actuellement leader technique sur un projet React, React Native et NodeJS.\nPartisan d'automatiser tout ce qui peut l'être, notamment des tests à tout niveau.\nParticipant et organisateur d'événements Software Crafting.",
+    "jobs": [
+      {
+        "title": "Développeur freelance front-end",
+        "client": "Atos / CNES",
+        "from": "février 2018",
+        "to": "juillet 2018",
+        "icon": "",
+        "accomplishments": [
+          {
+            "description": "Sur le projet ISIS, un socle générique de centre de contrôle pour les missions satellitaires, j'ai contribué à l'implémentation de fonctionnalités graphiques.\nJ'ai aussi accompagné l'équipe sur l'écriture des tests et le workflow Git.",
+            "tags": [
+              "React",
+              "Redux",
+              "Electron",
+              "TDD"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Développeur full-stack JavaScript & Java",
+        "client": "Cegedim",
+        "from": "avril 2017",
+        "to": "janvier 2018",
+        "icon": "",
+        "accomplishments": [
+          {
+            "description": "En tant que membre d'une équipe agile de 10 personnes, j'ai contribué au développement de micro-services API et UI pour la prochaine offre logicielle de Cegedim.\n\nEnvironnement:\n- Test Driven Development,\n- Pair-programming,\n- intégration et déploiement continu,\n- tests API et UI automatisés,\n- méthodologie agile",
+            "tags": [
+              "React",
+              "Redux",
+              "NodeJS",
+              "MongoDB",
+              "SpringBoot",
+              "CucumberTests",
+              "ContinuousDelivery",
+              "PairProgramming",
+              "Agile",
+              "TDD"
+            ]
+          },
+          {
+            "description": "J'ai implémenté une application mobile cross-platform à destination des patients en soins optiques, incluant le déploiement sur le Play Store Android, \n- le portail web associé pour les opticiens (UI et API)\n",
+            "tags": [
+              "MobileDevelopment",
+              "ReactNative",
+              "NodeJS",
+              "React",
+              "MobX"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "développeur back-end JEE",
+        "client": "Lyra Network",
+        "from": "octobre 2016",
+        "to": "mars 2017",
+        "icon": "",
+        "accomplishments": [
+          {
+            "description": "En tant que consultant pour le compte de Celad, j'ai développé un connecteur entre PayZen (la solution de e-paiement de Lyra) et des moyens de paiement sud-américains:\n- analyse de l'API de moyens de paiement sud-américains\n- implementation du connecteur\n- integration à PayZen",
+            "tags": [
+              "Java8",
+              "JEE",
+              "JBoss",
+              "Agile",
+              "TDD"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Lead développeur JEE",
+        "client": "Natixis",
+        "from": "septembre 2013",
+        "to": "septembre 2016",
+        "icon": "",
+        "accomplishments": [
+          {
+            "description": "En tant que consultant pour le compte de Celad, j'étais en charge de l'accompagnement technique de l'équipe de 5 personnes. Ensemble, nous créions des applications web pour le département Crédit (CCO).",
+            "tags": [
+              "Java8",
+              "Spring",
+              "ApacheCamel",
+              "maven",
+              "REST",
+              "Soap",
+              "JEE",
+              "EJB3",
+              "JPA",
+              "JSF",
+              "Oracle",
+              "SpringBatch"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "enseignant vacataire",
+        "client": "Centre universitaire de formation et de recherche Champollion",
+        "from": "septembre 2013",
+        "to": "janvier 2015",
+        "icon": "",
+        "accomplishments": [
+          {
+            "description": "Encadrement de projets de fin d'étude pour des élèves ingénieurs.\nEn binôme, les étudiants développaient des applications autonomes d'un système d'information hospitalier (admission, radiologie, pharmacie, facturation...).\n\nObjectifs des étudiants: \n- apprendre et appliquer les principes de développement en Java et en architecture orientée services, \n- découvrir et appliquer les standards de qualité de code tels que le Test Driven Development et JUnit, \n- mettre en pratiques les enseignements sur l'architecture des systèmes d'information de la santé (présentation d'un moyen d'interconnecter des applications indépendantes: Mule ESB).\n\nTechnologies enseignées: #Java #Hibernate #JUnit #GWT #MySQL #SOA #TDD #Git\n\nISIS: Informatique et Systèmes d'Information pour la Santé. Ecole d'ingénieurs basée à Castres, appartenant au centre universitaire Champollion (Albi - Castres - Rodez, France).\n\nAccomplissements: les étudiants ont élu ce cours comme 'meilleur enseignement et meilleur enseignant', les deux années où j'étais en poste.",
+            "tags": []
+          }
+        ]
+      },
+      {
+        "title": "développeur JEE, puis responsable de projet",
+        "client": "MiPih",
+        "from": "octobre 2007",
+        "to": "octobre 2012",
+        "icon": "",
+        "accomplishments": [
+          {
+            "description": "Au sein du département PGIH (un ERP à destination des hôpitaux français), jétais en charge du développement et de la gestion de projets de 300 à 3000 jours-hommes, dans des équipes de 3 à 5 personnes.",
+            "tags": [
+              "JEE",
+              "Hibernate",
+              "GWT",
+              "Oracle",
+              "maven",
+              "tomcat",
+              "JBoss",
+              "Jenkins",
+              "SVN"
+            ]
+          },
+          {
+            "description": "Au sein du département PGIH, j'ai piloté le projet ESPIC: le projet phare de la société, 15 années-homme sur 18 mois\nle project consistait à faire évoluer le PGIH pour s'adapter aux établissements privés.\nAccomplissements: livraison dans les temps, en tenant les objectifs du client en termes de qualité et de satisfaction utilisateur.",
+            "tags": [
+              "JEE",
+              "Hibernate",
+              "GWT",
+              "Oracle",
+              "maven",
+              "tomcat",
+              "JBoss",
+              "Jenkins",
+              "SVN"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "développeur JEE",
+        "client": "Airbus",
+        "from": "septembre 2004",
+        "to": "septembre 2007",
+        "icon": "",
+        "accomplishments": [
+          {
+            "description": "Pour le compte d'Artware, je contribuais au dévelopmmenent de nouvelles applications web, au sein d'équipes de 3 à 6 personnes.",
+            "tags": [
+              "JEE",
+              "Hibernate",
+              "Struts",
+              "Spring",
+              "Oracle",
+              "JUnit"
+            ]
+          }
+        ]
+      }
+    ],
+    "formations": [
+      {
+        "title": "Diplôme d'ingénieur en génie logiciel",
+        "organizer": "Ecole Supérieure d'Electronique de l'Ouest - ESEO, Angers, France",
+        "from": "1999",
+        "to": "2004"
+      },
+      {
+        "title": "MongoDB for NodeJS developers",
+        "organizer": "MongoDB University",
+        "from": "octobre 2017",
+        "to": "decembre 2017"
+      }
+    ]
+  },
+  "realisations": [
+    {
+      "name": "Scores",
+      "tags": [
+        "ReactNative",
+        "MobX",
+        "Android Play Store"
+      ],
+      "context": "Application mobile de gestion des scores, réécrite en ReactNative, déployée sur le Play Store Android.",
+      "objectives": [
+        "Améliorer mes compétences en développement mobile cross-platform",
+        "Expérimenter la publication d'applications Android",
+        "Développer mes compétences en MobX"
+      ],
+      "links": [
+        {
+          "title": "Android play store",
+          "url": "https://play.google.com/store/apps/details?id=me.euzebe.scores"
+        }
+      ]
+    },
+    {
+      "name": "Sumofages",
+      "tags": [
+        "React",
+        "Jest",
+        "e2eTests",
+        "CypressIO",
+        "ContinuousIntegration",
+        "ContinuousDelivery"
+      ],
+      "context": "application web pour sommer les âges de plusieurs personnes, et obtenir la date à laquelle l'âge demandé sera atteint.\n\nDivisé en une librairie NPM pour la partie calcul, et une Single Page Application. Les 2 parties sont en intégration continue, la partie UI est aussi en déploiement continu.\n\nTests unitaires avec Jest, tests end-to-end avec Cypress.io",
+      "objectives": [
+        "publier une librairie NPM",
+        "pratiquer les tests e2e avec Cypress.io",
+        "pratiquer le typage de composants JS avec Flow type"
+      ],
+      "links": [
+        {
+          "title": "app",
+          "url": "https://euzebe.github.io/sumofages"
+        },
+        {
+          "title": "repository",
+          "url": "https://github.com/euzebe/sumofages"
+        },
+        {
+          "title": "NPM library",
+          "url": "https://www.npmjs.com/package/sumofages-lib"
+        }
+      ]
+    },
+    {
+      "name": "Scores",
+      "context": "appliation mobile hybride qui permet de gérer les scores.",
+      "tags": [
+        "Angular",
+        "Ionic",
+        "TypeScript",
+        "Jasmine"
+      ],
+      "objectives": [
+        "Expérimener Angular 2",
+        "Expérimener TypeScript"
+      ]
+    },
+    {
+      "name": "meLe",
+      "context": "application web de tirage au sort, qui choisit une combinaison {participant, personne affectée} parmi toutes celles possibles, en fonction de critères restrictifs.",
+      "tags": [
+        "AngularJS",
+        "NodeJS",
+        "CouchDB",
+        "Yeoman",
+        "npm",
+        "Git",
+        "linux",
+        "Jacop",
+        "openshift"
+      ]
+    }
+  ]
+}
