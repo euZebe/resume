@@ -13,7 +13,8 @@ export default class ResumeContentType {
         public identity: Identity,
         public summary: Summary,
         public links: Link[],
-        public realisations: Realisation[]
+        public realisations: Realisation[],
+        public lang: string,
     ) { }
 
 }

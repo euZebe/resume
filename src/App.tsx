@@ -1,13 +1,16 @@
 import * as React from 'react';
 import { css } from 'react-emotion';
 import styled  from 'react-emotion';
-import ResumeContentType from './model/ResumeContentType';
+// import LangContext from './LangContext';
 import ResumeHeader from './ResumeHeader';
 import AsideContent from './AsideContent';
 import Main from './Main';
+import ResumeContentType from "./model/ResumeContentType";
 const json = require('./content/resume.json');
+const jsonFr = require('./content/resume.fr.json');
 
-const resumeContent = ResumeContentType.desserialize(json);
+const lang = window.location.href.endsWith('/fr') ? 'fr' : 'en';
+const resumeContent = ResumeContentType.desserialize(lang === 'fr' ? jsonFr : json);
 
 const headerStyle = css`
     grid-area: header;
@@ -39,6 +42,10 @@ const Container = styled('div')`
         margin: 10px 0 10px 0;
     }
     
+    h1 {
+        page-break-before: right;
+    }
+    
     @media print {
         grid-template-columns: 200px 1fr;
         width: 100%;
@@ -54,20 +61,22 @@ class App extends React.Component {
 
     render() {
         return (
-            <Container>
-                <ResumeHeader
-                    className={headerStyle}
-                    name={resumeContent.identity.name}
-                    title={resumeContent.summary.title}
-                    summaryTags={resumeContent.summary.tags}
-                />
-                <aside className={asideStyle}>
-                    <AsideContent resume={resumeContent} />
-                </aside>
-                <article className={mainStyle}>
-                    <Main {...resumeContent} />
-                </article>
-            </Container>
+            //<LangContext.Provider value={lang}>
+                <Container>
+                    <ResumeHeader
+                        className={headerStyle}
+                        name={resumeContent.identity.name}
+                        title={resumeContent.summary.title}
+                        summaryTags={resumeContent.summary.tags}
+                    />
+                    <aside className={asideStyle}>
+                        <AsideContent resume={resumeContent}/>
+                    </aside>
+                    <article className={mainStyle}>
+                        <Main {...resumeContent} lang={lang}/>
+                    </article>
+                </Container>
+            // </LangContext.Provider>
         );
     }
 }

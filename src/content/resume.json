@@ -1,7 +1,7 @@
 {
   "identity": {
     "name": "Jean Martineau-Figuette",
-    "email": "jean.martineau@gmail.com",
+    "email": "jean.martineau@axiome.me",
     "phone": "+33 7 60 97 00 44"
   },
   "links": [
@@ -16,7 +16,7 @@
       "icon": ""
     },
     {
-      "title": "Talk React Toulouse",
+      "title": "Talk",
       "url": "https://www.youtube.com/watch?v=gwHr12YK9K0",
       "icon": ""
     }

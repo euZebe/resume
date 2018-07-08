@@ -1,6 +1,6 @@
 import * as React from 'react';
 import styled from 'react-emotion';
-import { FaLinkedinSquare, FaGithub, FaEnvelope, FaPhone } from 'react-icons/lib/fa';
+import { FaLinkedinSquare, FaGithub, FaEnvelope, FaPhone, FaVideoCamera } from 'react-icons/lib/fa';
 import ResumeContentType from './model/ResumeContentType';
 import Paragraph from './Paragraph';
 import Anchor from './Anchor';
@@ -94,6 +94,7 @@ const AsideContent = (props: Props) => {
 
     const linkedInLink = links.find(link => link.title === 'LinkedIn');
     const githubLink = links.find(link => link.title === 'github');
+    const talkLink = links.find(link => link.title === 'Talk');
     return (
         <Container>
 
@@ -130,6 +131,12 @@ const AsideContent = (props: Props) => {
                     <BigIconLink href={githubLink.url}>
                         <FaGithub size={30}/>
                         <label>{githubLink.url.replace('https://', '')}</label>
+                    </BigIconLink>
+                }
+                {talkLink &&
+                    <BigIconLink href={talkLink.url}>
+                        <FaVideoCamera size={30}/>
+                        <label>{talkLink.label}</label>
                     </BigIconLink>
                 }
             </LinksContainer>

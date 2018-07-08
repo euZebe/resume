@@ -1,7 +1,7 @@
 {
   "identity": {
     "name": "Jean Martineau-Figuette",
-    "email": "jean.martineau@axiome.com",
+    "email": "jean.martineau@axiome.me",
     "phone": "+33 7 60 97 00 44"
   },
   "links": [
@@ -16,7 +16,8 @@
       "icon": ""
     },
     {
-      "title": "Talk React Toulouse",
+      "title": "Talk",
+      "label": "Talk Redux",
       "url": "https://www.youtube.com/watch?v=gwHr12YK9K0",
       "icon": ""
     }
@@ -30,10 +31,10 @@
       "Test Driven Development",
       "continuous learner"
     ],
-    "about": "Développeur web full stack, actuellement leader technique sur un projet React, React Native et NodeJS.\nPartisan d'automatiser tout ce qui peut l'être, notamment des tests à tout niveau.\nParticipant et organisateur d'événements Software Crafting.",
+    "about": "Développeur web full stack, actuellement leader technique sur un projet React, Electron et NodeJS.\nPartisan d'automatiser tout ce qui peut l'être, notamment les tests à tout niveau.\nParticipant et organisateur d'événements Software Crafting.",
     "jobs": [
       {
-        "title": "Développeur freelance front-end",
+        "title": "Développeur freelance front-end - leader technique",
         "client": "Atos / CNES",
         "from": "février 2018",
         "to": "juillet 2018",
@@ -73,7 +74,7 @@
             ]
           },
           {
-            "description": "J'ai implémenté une application mobile cross-platform à destination des patients en soins optiques, incluant le déploiement sur le Play Store Android, \n- le portail web associé pour les opticiens (UI et API)\n",
+            "description": "J'ai implémenté une application mobile cross-platform à destination des patients en soins optiques, incluant le déploiement sur le Play Store Android, \net le portail web associé pour les opticiens (UI et API)\n",
             "tags": [
               "MobileDevelopment",
               "ReactNative",
