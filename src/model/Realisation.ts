@@ -1,6 +1,6 @@
 import Link from './Link';
 
-export default class Realisation {
+export default interface Realisation {
     name: string;
     tags: string[];
     context?: string;

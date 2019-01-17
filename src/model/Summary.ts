@@ -1,7 +1,7 @@
 import Job from './Job';
 import Formation from './Formation';
 
-export default class Summary {
+export default interface Summary {
     title: string;
     tags: string[];
     about: string;

@@ -1,4 +1,4 @@
-export default class Accomplishment {
+export default interface Accomplishment {
     description: string;
     tags: string[];
 }

@@ -1,4 +1,4 @@
-export default class Link {
+export default interface Link {
     title: string;
     url: string;
     label?: string;

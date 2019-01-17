@@ -2,6 +2,7 @@ import Identity from './Identity';
 import Summary from './Summary';
 import Link from './Link';
 import Realisation from './Realisation';
+import Talk from "./Talk";
 
 export default class ResumeContentType {
 
@@ -15,6 +16,7 @@ export default class ResumeContentType {
         public links: Link[],
         public realisations: Realisation[],
         public lang: string,
+        public talks: Talk[],
     ) { }
 
 }

@@ -1,6 +1,6 @@
 import Accomplishment from './Accomplishment';
 
-export default class Job {
+export default interface Job {
     title: string;
     client: string;
     from: string;
