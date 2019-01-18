@@ -105,7 +105,7 @@ class Main extends React.Component<ResumeContentType> {
         const { realisations, talks } = this.props;
         return (
             <ExperiencesContainer>
-                <h1 id="talks">PUBLIC TALKS</h1>
+                <h1 id="talks">TALKS</h1>
                 {talks.map(renderTalk)}
                 <h1 id="experiences">EXPERIENCES</h1>
                 {jobs.map(renderJob)}

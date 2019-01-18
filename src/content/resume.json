@@ -49,7 +49,7 @@
         "icon": "",
         "accomplishments": [
           {
-            "description": "I contributed to the implementation of BSS v3 UI, the next generation app for Sigfox customers price grids, quotes and contracts.\nI also presented Cypress, an end-to-end tests framework, which the team adopted. Then my mission turned out into support with using Cypress and defining test strategies for the current project.",
+            "description": "I contributed to the implementation of BSS v3 UI, the next generation app for Sigfox customers price grids, quotes, contracts and orders.\nI also presented Cypress, an end-to-end tests framework, which the team adopted. Then my mission turned out into support with using Cypress and defining test strategies for the current project.",
             "tags": [
               "React",
               "Redux",

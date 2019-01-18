@@ -14,34 +14,60 @@
       "title": "LinkedIn",
       "url": "https://www.linkedin.com/in/jean-martineau-figuette/",
       "icon": ""
-    },
-    {
-      "title": "Talk",
-      "label": "Talk Redux",
-      "url": "https://www.youtube.com/watch?v=gwHr12YK9K0",
-      "icon": ""
     }
   ],
   "summary": {
-    "title": "Ingénieur sénior en développement web full-stack",
+    "title": "Développeur web sénior, référent technique",
     "tags": [
       "React",
       "NodeJS",
-      "MongoDB",
+      "Cypress",
       "Test Driven Development",
-      "continuous learner"
+      "Artisan logiciel"
     ],
-    "about": "Développeur web full stack, actuellement leader technique sur un projet React, Electron et NodeJS.\nPartisan d'automatiser tout ce qui peut l'être, notamment les tests à tout niveau.\nParticipant et organisateur d'événements Software Crafting.",
+    "about": "Partisan de l'automatisation de tout ce qui peut l'être, notamment les tests à tout niveau.\nParticipant et organisateur d'événements autour du Software Crafting et de React.",
     "jobs": [
       {
-        "title": "Développeur freelance front-end - leader technique",
+        "title": "Consultant indépendant",
+        "client": "Lensys",
+        "from": "janvier 2019",
+        "icon": "",
+        "accomplishments": [
+          {
+            "description": "Accompagnement sur l'automatisation des tests",
+            "tags": [
+              "Cypress"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Développeur front-end indépendant",
+        "client": "Sigfox",
+        "from": "septembre 2018",
+        "to": "décembre 2018",
+        "icon": "",
+        "accomplishments": [
+          {
+            "description": "J'ai participé à l'implémentation de l'IHM de BSS v3, la prochaine application de gestion des grilles de prix, devis, contrats et commandes des clients de Sigfox.\nJ'ai présenté Cypress, un outil d'automatisation des tests end-to-end, que l'équipe a adopté par la suite. Ma mission s'est alors enrichie de l'accompagnement à l'utilisation de Cypress et à la définition des stratégies de tests pour ledit projet.",
+            "tags": [
+              "React",
+              "Redux",
+              "Cypress",
+              "TDD"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Développeur front-end indépendant, référent technique",
         "client": "Atos / CNES",
         "from": "février 2018",
         "to": "juillet 2018",
         "icon": "",
         "accomplishments": [
           {
-            "description": "Sur le projet ISIS, un socle générique de centre de contrôle pour les missions satellitaires, j'ai contribué à l'implémentation de fonctionnalités graphiques.\nJ'ai aussi accompagné l'équipe sur l'écriture des tests et le workflow Git.",
+            "description": "Sur le projet ISIS, un socle générique de centre de contrôle pour les missions satellitaires, j'ai contribué à l'implémentation de fonctionnalités graphiques.\nJ'ai aussi accompagné l'équipe sur l'utilisation de React et Redux ainsi que l'écriture des tests.",
             "tags": [
               "React",
               "Redux",
@@ -59,7 +85,7 @@
         "icon": "",
         "accomplishments": [
           {
-            "description": "En tant que membre d'une équipe agile de 10 personnes, j'ai contribué au développement de micro-services API et UI pour la prochaine offre logicielle de Cegedim.\n\nEnvironnement:\n- Test Driven Development,\n- Pair-programming,\n- intégration et déploiement continu,\n- tests API et UI automatisés,\n- méthodologie agile",
+            "description": "En tant que membre d'une équipe agile de 10 personnes, j'ai contribué au développement de micro-services API et UI pour la prochaine offre logicielle de Cegedim.",
             "tags": [
               "React",
               "Redux",
@@ -74,10 +100,11 @@
             ]
           },
           {
-            "description": "J'ai implémenté une application mobile cross-platform à destination des patients en soins optiques, incluant le déploiement sur le Play Store Android, \net le portail web associé pour les opticiens (UI et API)\n",
+            "description": "J'ai implémenté une application mobile cross-platform à destination des patients en soins optiques, incluant le déploiement sur le Play Store Android, le portail web associé pour les opticiens, et le back-end associé.",
             "tags": [
               "MobileDevelopment",
               "ReactNative",
+              "React",
               "NodeJS",
               "React",
               "MobX"
@@ -132,14 +159,16 @@
       },
       {
         "title": "enseignant vacataire",
-        "client": "Centre universitaire de formation et de recherche Champollion",
+        "client": "Centre universitaire Champollion - ISIS, Castres",
         "from": "septembre 2013",
         "to": "janvier 2015",
         "icon": "",
         "accomplishments": [
           {
-            "description": "Encadrement de projets de fin d'étude pour des élèves ingénieurs.\nEn binôme, les étudiants développaient des applications autonomes d'un système d'information hospitalier (admission, radiologie, pharmacie, facturation...).\n\nObjectifs des étudiants: \n- apprendre et appliquer les principes de développement en Java et en architecture orientée services, \n- découvrir et appliquer les standards de qualité de code tels que le Test Driven Development et JUnit, \n- mettre en pratiques les enseignements sur l'architecture des systèmes d'information de la santé (présentation d'un moyen d'interconnecter des applications indépendantes: Mule ESB).\n\nTechnologies enseignées: #Java #Hibernate #JUnit #GWT #MySQL #SOA #TDD #Git\n\nISIS: Informatique et Systèmes d'Information pour la Santé. Ecole d'ingénieurs basée à Castres, appartenant au centre universitaire Champollion (Albi - Castres - Rodez, France).\n\nAccomplissements: les étudiants ont élu ce cours comme 'meilleur enseignement et meilleur enseignant', les deux années où j'étais en poste.",
-            "tags": []
+            "description": "Encadrement de projets de fin d'étude pour des élèves ingénieurs.\nEn binôme, les étudiants développaient des applications autonomes d'un système d'information hospitalier (admission, radiologie, pharmacie, facturation...).\n\nObjectifs des étudiants: \n- apprendre et appliquer les principes de développement en Java et en architecture orientée services, \n- découvrir et appliquer les standards de qualité de code tels que le Test Driven Development et JUnit, \n- mettre en pratiques les enseignements sur l'architecture des systèmes d'information de la santé.",
+            "tags": [
+              "Java", "Hibernate", "Tomcat", "JUnit", "GWT", "MySQL", "SOA", "TDD", "Git", "MuleESB"
+            ]
           }
         ]
       },
@@ -165,7 +194,7 @@
             ]
           },
           {
-            "description": "Au sein du département PGIH, j'ai piloté le projet ESPIC: le projet phare de la société, 15 années-homme sur 18 mois\nle project consistait à faire évoluer le PGIH pour s'adapter aux établissements privés.\nAccomplissements: livraison dans les temps, en tenant les objectifs du client en termes de qualité et de satisfaction utilisateur.",
+            "description": "Au sein du département PGIH, j'ai piloté le projet ESPIC: le projet phare de la société, 15 années-homme sur 18 mois\nle project consistait à faire évoluer le PGIH pour s'adapter aux établissements privés.",
             "tags": [
               "JEE",
               "Hibernate",
@@ -216,6 +245,18 @@
       }
     ]
   },
+  "talks": [
+    {
+      "title": "What if we tested our front-end?",
+      "organization": "Meetup GDG Toulouse",
+      "url": "https://www.youtube.com/watch?v=e1S5GTBN-5c"
+    },
+    {
+      "title": "Bonnes pratiques avec Redux",
+      "organization": "Meetup React Toulouse",
+      "url": "https://www.youtube.com/watch?v=gwHr12YK9K0"
+    }
+  ],
   "realisations": [
     {
       "name": "Scores",
@@ -224,12 +265,7 @@
         "MobX",
         "Android Play Store"
       ],
-      "context": "Application mobile de gestion des scores, réécrite en ReactNative, déployée sur le Play Store Android.",
-      "objectives": [
-        "Améliorer mes compétences en développement mobile cross-platform",
-        "Expérimenter la publication d'applications Android",
-        "Développer mes compétences en MobX"
-      ],
+      "context": "Application mobile de gestion des scores, déployée sur le Play Store Android.",
       "links": [
         {
           "title": "Android play store",
@@ -247,12 +283,7 @@
         "ContinuousIntegration",
         "ContinuousDelivery"
       ],
-      "context": "application web pour sommer les âges de plusieurs personnes, et obtenir la date à laquelle l'âge demandé sera atteint.\n\nDivisé en une librairie NPM pour la partie calcul, et une Single Page Application. Les 2 parties sont en intégration continue, la partie UI est aussi en déploiement continu.\n\nTests unitaires avec Jest, tests end-to-end avec Cypress.io",
-      "objectives": [
-        "publier une librairie NPM",
-        "pratiquer les tests e2e avec Cypress.io",
-        "pratiquer le typage de composants JS avec Flow type"
-      ],
+      "context": "application web pour additionner les âges de plusieurs personnes, et obtenir la date à laquelle l'âge demandé sera atteint.\n\nDivisé en une librairie NPM pour la partie calcul, et une Single Page Application.",
       "links": [
         {
           "title": "app",
@@ -266,20 +297,6 @@
           "title": "NPM library",
           "url": "https://www.npmjs.com/package/sumofages-lib"
         }
-      ]
-    },
-    {
-      "name": "Scores",
-      "context": "appliation mobile hybride qui permet de gérer les scores.",
-      "tags": [
-        "Angular",
-        "Ionic",
-        "TypeScript",
-        "Jasmine"
-      ],
-      "objectives": [
-        "Expérimener Angular 2",
-        "Expérimener TypeScript"
       ]
     },
     {
