@@ -15,14 +15,23 @@ const Container = styled('div')`
     display: flex;
     flex-direction: column;
     text-align: left;
+    @media print {
+    
+    }
 `;
 
 const Image = styled('img')`
     width: 100%;
-    
+    e
     @media screen and (max-width: 1000px) {
         width: auto;
         height: 100px;
+    }
+    @media print {
+        max-width: 4cm;
+        position: absolute;
+        top: 0;
+        right: 0;
     }
 `;
 
@@ -40,6 +49,7 @@ const LinksContainer = styled('div')`
     display: flex;
     
     @media print {
+        display: block;
         flex-direction: column;
     }
 `;
@@ -53,7 +63,7 @@ const BigIconLink = styled('a')`
     
     @media print {
         text-align: left;
-                
+        
         > svg {
             display: none;
         }
@@ -61,6 +71,7 @@ const BigIconLink = styled('a')`
         > label {
             display: unset;
             font-size: 0.8rem;
+            margin-right: 1cm;
         }
     }
 `;
@@ -142,6 +153,7 @@ const AsideContent = (props: Props) => {
             </LinksContainer>
 
             <AnchorsContainer id="innerLinks">
+                <Anchor link="#talks" label="Talks" />
                 <Anchor link="#experiences" label="Experiences" />
                 <Anchor link="#side-projects" label="Side projects" />
                 <Anchor link="#formations" label="Formations" />

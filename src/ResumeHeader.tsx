@@ -13,6 +13,9 @@ const TagsContainer = styled('span')`
     display: flex; 
     flex-flow: row wrap;
     justify-content: center;
+    @media print {
+        display: block;
+    }
 `;
 
 const ResumeHeader = ({ name, title, summaryTags, className }: Props) => (

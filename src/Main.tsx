@@ -11,6 +11,7 @@ import TagsContainer from './TagsContainer';
 import LightTag from './LightTag';
 import Link from './model/Link';
 import Anchor from './Anchor';
+import Talk from "./model/Talk";
 
 const ExperiencesContainer = styled('div')`
     text-align: start;
@@ -89,13 +90,24 @@ function renderProjectLinks(links: Link[]): ReactChild {
     );
 }
 
+function renderTalk(talk: Talk): ReactChild {
+    return (
+        <div key={talk.url}>
+            <h3><a href={talk.url}>{talk.title}</a></h3>
+            <section>{talk.organization}</section>
+        </div>
+    )
+}
+
 class Main extends React.Component<ResumeContentType> {
     render() {
         const { jobs, formations } = this.props.summary;
-        const { realisations } = this.props;
+        const { realisations, talks } = this.props;
         return (
             <ExperiencesContainer>
-                <h1  id="experiences">EXPERIENCES</h1>
+                <h1 id="talks">PUBLIC TALKS</h1>
+                {talks.map(renderTalk)}
+                <h1 id="experiences">EXPERIENCES</h1>
                 {jobs.map(renderJob)}
                 <h1 id="side-projects">SIDE PROJECTS</h1>
                 {realisations.map(renderRealisation)}

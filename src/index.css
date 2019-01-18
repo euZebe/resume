@@ -52,20 +52,22 @@ section {
 
 @media print {
     body {
-        font-size: 10pt;
+        font-size: 12pt;
+        margin: 0;
     }
 
     p, blockquote {
         orphans: 3; /* pas de ligne seule en bas */
         widows: 3; /* pas de ligne seule en haut */
     }
-    blockquote, ul, ol {
+    blockquote, ul, ol, section {
         page-break-inside: avoid; /* pas de coupure dans ces élements */
+        page-break-before: avoid;
     }
-    h1 {
-        page-break-before: always; /* chaque titre commence sur une nouvelle page */
-    }
-    h1, h2, h3, caption {
+    h1, h2, h3, h4, h5, caption {
         page-break-after: avoid; /* pas de saut après ces éléments */
+    }
+    h3 {
+        page-break-before: auto;
     }
 }

@@ -14,33 +14,60 @@
       "title": "LinkedIn",
       "url": "https://www.linkedin.com/in/jean-martineau-figuette/",
       "icon": ""
-    },
-    {
-      "title": "Talk",
-      "url": "https://www.youtube.com/watch?v=gwHr12YK9K0",
-      "icon": ""
     }
   ],
   "summary": {
-    "title": "Freelance Java & JavaScript senior engineer, technical leader",
+    "title": "Freelance senior engineer, technical leader",
     "tags": [
       "React",
       "NodeJS",
-      "MongoDB",
+      "Cypress",
       "Test Driven Development",
-      "continuous learner"
+      "Software crafting"
     ],
-    "about": "Full stack web engineer, currently working mainly on React, React Native and NodeJS projects, but having also skills in Angular and Java.\nPartisan of automating all that can be done, including tests at every level.\nParticipant and organizer of software craftsmanship events.",
+    "about": "Advocate of automating all that can be done, especially tests at every level.\nParticipant and organizer of software crafting and React events.",
     "jobs": [
       {
+        "title": "Freelance consultant",
+        "client": "Lensys",
+        "from": "january 2019",
+        "icon": "",
+        "accomplishments": [
+          {
+            "description": "Tests automation consulting",
+            "tags": [
+              "Cypress"
+            ]
+          }
+        ]
+      },
+      {
         "title": "Freelance front-end developer",
+        "client": "Sigfox",
+        "from": "september 2018",
+        "to": "december 2018",
+        "icon": "",
+        "accomplishments": [
+          {
+            "description": "I contributed to the implementation of BSS v3 UI, the next generation app for Sigfox customers price grids, quotes and contracts.\nI also presented Cypress, an end-to-end tests framework, which the team adopted. Then my mission turned out into support with using Cypress and defining test strategies for the current project.",
+            "tags": [
+              "React",
+              "Redux",
+              "Cypress",
+              "TDD"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Freelance front-end developer, technical leader",
         "client": "Atos / CNES",
         "from": "february 2018",
         "to": "july 2018",
         "icon": "",
         "accomplishments": [
           {
-            "description": "Working for ISIS, a widely-customizable standalone application for monitoring satellite missions, I implement UI features.\nI also coach the team on tests writing and Git workflow applied to customer requirements.",
+            "description": "Working for ISIS, a widely-customizable standalone application for monitoring satellite missions, I implement UI features.\nI also led the team on the use of React and Redux, and on test writing.",
             "tags": [
               "React",
               "Redux",
@@ -58,7 +85,7 @@
         "icon": "",
         "accomplishments": [
           {
-            "description": "As a member of a 10-person agile team, I contributed to the development of API and UI micro-services for Cegedim's next health insurance solution.\n\nWorking environment:\n- Test Driven Development,\n- Pair-programming,\n- Continuous integration and delivery,\n- Automated tests on both API and UI parts,\n- Agile methodology",
+            "description": "As a member of a 10-person agile team, I contributed to the development of API and UI micro-services for Cegedim's next health insurance solution.",
             "tags": [
               "React",
               "Redux",
@@ -73,10 +100,11 @@
             ]
           },
           {
-            "description": "I implemented a cross-platform mobile app for optic patients, including deployment to Android Play Store, using React Native,\nthe associated web portal for opticians\nthe corresponding NodeJS back-end",
+            "description": "I implemented a cross-platform mobile app for optic patients, including deployment to Android Play Store, the associated web portal for opticians and the corresponding back-end",
             "tags": [
               "MobileDevelopment",
               "ReactNative",
+              "React",
               "NodeJS",
               "React",
               "MobX"
@@ -92,7 +120,7 @@
         "icon": "",
         "accomplishments": [
           {
-            "description": "As a consultant on behalf of Celad, I developed a connector between PayZen (Lyra's online payment solution) and south-american payment methods:\n- analysis of south-american payment methods API\n- implementation of the connector\n- integration to PayZen",
+            "description": "As a consultant on behalf of Celad, I developed a connector between PayZen (Lyra's online payment solution) and south-american payment methods:\n- analysis of south-american payment methods API\n- connector implementation\n- integration to PayZen",
             "tags": [
               "Java8",
               "JEE",
@@ -131,14 +159,16 @@
       },
       {
         "title": "Part-time teacher",
-        "client": "Centre universitaire de formation et de recherche Champollion",
+        "client": "Centre universitaire Champollion - ISIS, Castres",
         "from": "september 2013",
         "to": "january 2015",
         "icon": "",
         "accomplishments": [
           {
-            "description": "Supervision of tutored projects for students in their final year of engineering school.\nBy pair, the students developed an autonomous application of a hospital information system (admission, radiology, pharmacy, invoicing...).\n\nStudents objectives : \n- learn and apply Java development principles and service-oriented architecture, \n- learn and apply quality standards in coding as Test Driven Development and JUnit, \n- applying lessons concerning the architecture of health information systems (presentation of a means of interconnecting independent applications: Mule ESB).\n\nAt each session, a part of lecture to present the functional and technical aspects to be implemented during the session, then a practical part to advance the development of applications. I was then involved in technical support.\n\nTechnologies taught: #Java #Hibernate #JUnit #GWT #MySQL #SOA #TDD #Git\n\nISIS: Informatics and Health Information Systems. Engineering school of Castres, belonging to Champollion university center (Albi - Castres - Rodez, south west of France).\n\nAchievements: Students voted for that course as the best teaching and the best teacher, both years I have been in the position.",
-            "tags": []
+            "description": "I supervised students on their final-year project of engineering school.\nBy pair, students developed an autonomous application of a hospital information system (admission, radiology, pharmacy, invoicing...).\n\nStudents objectives : \n- learn and apply Java development principles and service-oriented architecture, \n- learn and apply quality standards in coding as Test Driven Development and JUnit, \n- applying lessons concerning the architecture of health information systems.",
+            "tags": [
+              "Java", "Hibernate", "Tomcat", "JUnit", "GWT", "MySQL", "SOA", "TDD", "Git", "MuleESB"
+            ]
           }
         ]
       },
@@ -164,7 +194,7 @@
             ]
           },
           {
-            "description": "Assigned to PGIH department (PGIH is an ERP for french hospitals), I managed ESPIC project: a top-priority project of 15 man-years over 18 months\nconsisting in the evolution of PGIH to fit private health establishments,\nAchievements: on-time delivery, quality and client satisfaction objectives achieved.",
+            "description": "Assigned to PGIH department (PGIH is an ERP for french hospitals), I managed ESPIC project: a top-priority project of 15 man-years over 18 months, consisting in evolving PGIH to adapt it to private health establishments workflow.",
             "tags": [
               "JEE",
               "Hibernate",
@@ -215,6 +245,18 @@
       }
     ]
   },
+  "talks": [
+    {
+      "title": "What if we tested our front-end?",
+      "organization": "Meetup GDG Toulouse",
+      "url": "https://www.youtube.com/watch?v=e1S5GTBN-5c"
+    },
+    {
+      "title": "Bonnes pratiques avec Redux",
+      "organization": "Meetup React Toulouse",
+      "url": "https://www.youtube.com/watch?v=gwHr12YK9K0"
+    }
+  ],
   "realisations": [
     {
       "name": "Scores",
@@ -223,12 +265,7 @@
         "MobX",
         "Android Play Store"
       ],
-      "context": "Scores Mobile app sheet app re-written in ReactNative, deployed on Android Play Store.",
-      "objectives": [
-        "Enhance my abilities in cross-platform development",
-        "experiment Android app delivery",
-        "improve my skills with MobX"
-      ],
+      "context": "Scores sheet mobile app, deployed on Android Play Store.",
       "links": [
         {
           "title": "Android play store page",
@@ -242,16 +279,11 @@
         "React",
         "Jest",
         "e2eTests",
-        "CypressIO",
+        "Cypress",
         "ContinuousIntegration",
         "ContinuousDelivery"
       ],
-      "context": "Web application to sum ages of several persons and give the date when this sum reaches the expected age.\n\nSplitted in a NPM library for computation and a single page application. Both are in continuous integration, UI is in continuous delivery.\n\nUnit tests with Jest, end-to-end tests with Cypress.io",
-      "objectives": [
-        "publish an NPM library",
-        "practice e2e tests with Cypress.io",
-        "practice Flow type for typed React"
-      ],
+      "context": "Web application to sum ages of several persons and give the date when this sum reaches the expected age.\nSplitted in a NPM library for computation and a single page application.",
       "links": [
         {
           "title": "app",
@@ -265,21 +297,6 @@
           "title": "NPM library",
           "url": "https://www.npmjs.com/package/sumofages-lib"
         }
-      ]
-    },
-    {
-      "name": "Scores",
-      "context": "Hybrid mobile application that allows you to mark scores of different board games.",
-      "tags": [
-        "Angular",
-        "Ionic",
-        "TypeScript",
-        "Jasmine"
-      ],
-      "objectives": [
-        "experiment Angular 2",
-        "experiment TypeScript",
-        "experiment front-end testing"
       ]
     },
     {

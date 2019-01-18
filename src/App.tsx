@@ -14,12 +14,19 @@ const resumeContent = ResumeContentType.desserialize(lang === 'fr' ? jsonFr : js
 
 const headerStyle = css`
     grid-area: header;
+    @media print {
+        text-align: left;
+    }
 `;
 
 const asideStyle = css`
     grid-area: aside;
     border-right: 2px solid #ddd;
     display: flex;
+    @media print {
+        border: none;
+        display: block;
+    }
 `;
 
 const mainStyle = css`
@@ -43,11 +50,11 @@ const Container = styled('div')`
     }
     
     h1 {
-        page-break-before: right;
+        page-break-before: auto;
     }
     
     @media print {
-        grid-template-columns: 200px 1fr;
+        display: block;
         width: 100%;
     }
     
