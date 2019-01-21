@@ -28,7 +28,7 @@ function renderJob(job: Job): ReactChild {
     const to = job.to ? ` - ${job.to}` : '';
     const client = `${job.client} · ${job.from} ${to}`;
     return (
-        <div key={job.from}>
+        <div key={`${job.from}-${job.client}`}>
             <h3>{job.title}</h3>
             <h4>{client}</h4>
             {job.accomplishments
@@ -50,7 +50,7 @@ function renderFormation(formation: Formation): ReactChild {
 
 function renderRealisation(realisation: Realisation): ReactChild {
     return (
-        <div>
+        <div key={realisation.name}>
             <h3>{realisation.name}</h3>
             <section>
                 {realisation.context && <Paragraph text={realisation.context} />}
@@ -58,7 +58,7 @@ function renderRealisation(realisation: Realisation): ReactChild {
                 {realisation.links && renderProjectLinks(realisation.links)}
                 <TagsContainer>
                     {realisation.tags &&
-                        realisation.tags.map(t => (<LightTag>{t}</LightTag>))
+                        realisation.tags.map((t, index) => (<LightTag key={index}>{t}</LightTag>))
                     }
                 </TagsContainer>
             </section>
@@ -83,7 +83,7 @@ function renderProjectLinks(links: Link[]): ReactChild {
             <h4>Links</h4>
             <ul>
                 {links.map(l => (
-                    <Anchor link={l.url} label={l.title} />
+                    <Anchor link={l.url} label={l.title} key={l.title} />
                 ))}
             </ul>
         </React.Fragment>

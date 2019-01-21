@@ -1,7 +1,6 @@
 import * as React from 'react';
 import { css } from 'react-emotion';
 import styled  from 'react-emotion';
-// import LangContext from './LangContext';
 import ResumeHeader from './ResumeHeader';
 import AsideContent from './AsideContent';
 import Main from './Main';
@@ -9,7 +8,8 @@ import ResumeContentType from "./model/ResumeContentType";
 const json = require('./content/resume.json');
 const jsonFr = require('./content/resume.fr.json');
 
-const lang = window.location.href.endsWith('/fr') ? 'fr' : 'en';
+const params = new URLSearchParams(location.href.substring(window.location.href.indexOf('?') + 1));
+const lang = params.get('lang') || 'en';
 const resumeContent = ResumeContentType.desserialize(lang === 'fr' ? jsonFr : json);
 
 const headerStyle = css`
@@ -77,7 +77,7 @@ class App extends React.Component {
                         summaryTags={resumeContent.summary.tags}
                     />
                     <aside className={asideStyle}>
-                        <AsideContent resume={resumeContent}/>
+                        <AsideContent resume={resumeContent} lang={lang}/>
                     </aside>
                     <article className={mainStyle}>
                         <Main {...resumeContent} lang={lang}/>

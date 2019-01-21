@@ -23,7 +23,7 @@ const ResumeHeader = ({ name, title, summaryTags, className }: Props) => (
         <h1>{name}</h1>
         <h2>{title}</h2>
         <TagsContainer>
-            {summaryTags.map(tag => (<Tag>{tag}</Tag>))}
+            {summaryTags.map(tag => (<Tag key={tag}>{tag}</Tag>))}
         </TagsContainer>
     </div>
 );
