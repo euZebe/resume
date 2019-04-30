@@ -20,6 +20,7 @@
     "title": "Freelance senior engineer, technical leader",
     "tags": [
       "React",
+      "Angular",
       "NodeJS",
       "Cypress",
       "Test Driven Development",
@@ -27,6 +28,20 @@
     ],
     "about": "Advocate of automating all that can be done, especially tests at every level.\nParticipant and organizer of software crafting and React events.",
     "jobs": [
+      {
+        "title": "Freelance front-end developer",
+        "client": "Air France",
+        "from": "march 2019",
+        "icon": "",
+        "accomplishments": [
+          {
+            "description": "In a 6-person full remote team, starting from an application prototype for optimizing aircraft filling, I contribute to the rewriting of the user interface.\nI bring support to the junior developer, and am in charge of end-to-end test automation.",
+            "tags": [
+              "Angular", "Cypress"
+            ]
+          }
+        ]
+      },
       {
         "title": "Freelance consultant",
         "client": "Lensys",

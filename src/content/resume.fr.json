@@ -20,6 +20,7 @@
     "title": "Développeur web sénior, référent technique",
     "tags": [
       "React",
+      "Angular",
       "NodeJS",
       "Cypress",
       "Test Driven Development",
@@ -27,6 +28,20 @@
     ],
     "about": "Partisan de l'automatisation de tout ce qui peut l'être, notamment les tests à tout niveau.\nParticipant et organisateur d'événements autour du Software Crafting et de React.",
     "jobs": [
+      {
+        "title": "Développeur front-end indépendant",
+        "client": "Air France",
+        "from": "mars 2019",
+        "icon": "",
+        "accomplishments": [
+          {
+            "description": "Au sein d'une équipe distribuée de 6 personnes, partant d'un prototype d'application pour l'optimisation du remplissage des avions, je contribue à la réécriture de l'interface utilisateur.\nJ'interviens aussi en tant que référent front-end, et automatise les tests end-to-end.",
+            "tags": [
+              "Angular", "Cypress"
+            ]
+          }
+        ]
+      },
       {
         "title": "Consultant indépendant",
         "client": "Lensys",
