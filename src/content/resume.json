@@ -29,9 +29,25 @@
     "about": "Advocate of automating all that can be done, especially tests at every level.\nParticipant and organizer of software crafting and React events.",
     "jobs": [
       {
+        "title": "Full-stack lead developer",
+        "client": "Renault",
+        "from": "june 2019",
+        "to": "march 2020",
+        "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Renault_logo.jpg/150px-Renault_logo.jpg",
+        "accomplishments": [
+          {
+            "description": "In a 4-developer team, I contribute to the development of a web application for access rights automation.\nAs a lead developer, I help sharing knowledge and experience between team members, and introduces test driven development (TDD) end end-to-end testing in common practices.",
+            "tags": [
+              "React", "Express", "Event-sourcing", "Cypress"
+            ]
+          }
+        ]
+      },
+      {
         "title": "Freelance front-end developer",
         "client": "Air France",
         "from": "march 2019",
+        "to": "june 2019",
         "icon": "",
         "accomplishments": [
           {
@@ -261,6 +277,11 @@
     ]
   },
   "talks": [
+    {
+      "title":  "[React] Implémentation d'un useState en TDD",
+      "organization": "Meetup React Toulouse",
+      "url": "https://www.youtube.com/watch?v=S02ZYkh5sHk"
+    },
     {
       "title": "What if we tested our front-end?",
       "organization": "Meetup GDG Toulouse",
