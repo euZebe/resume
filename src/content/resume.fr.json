@@ -20,14 +20,28 @@
     "title": "Développeur web sénior, référent technique",
     "tags": [
       "React",
-      "Angular",
+      "React Native",
       "NodeJS",
       "Cypress",
       "Test Driven Development",
-      "Artisan logiciel"
+      "Artisanat logiciel"
     ],
     "about": "Partisan de l'automatisation de tout ce qui peut l'être, notamment les tests à tout niveau.\nParticipant et organisateur d'événements autour du Software Crafting et de React.",
     "jobs": [
+      {
+        "title": "Développeur d'application mobile",
+        "client": "Cofidoc",
+        "from": "avril 2020",
+        "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Renault_logo.jpg/150px-Renault_logo.jpg",
+        "accomplishments": [
+          {
+            "description": "Développement et maintenance en autonomie complète de l'application mobile Cofidoc Taxi qui permet aux taxis conventionnés CPAM de renseigner numériquement les transports médicaux réalisés, ceci afin de faciliter la facturation par Cofidoc.\nDéploiement sur les stores.",
+            "tags": [
+              "React Native", "MongoDB", "AWS (authentification, stockage, lambdas)"
+            ]
+          }
+        ]
+      },
       {
         "title": "Développeur full-stack, référent technique",
         "client": "Renault",
@@ -278,18 +292,23 @@
   },
   "talks": [
     {
+      "title": "Introduction au CSS-in-JS",
+      "organization": "React Toulouse",
+      "url": "https://www.youtube.com/watch?v=mAi6IF8ZuXM"
+    },
+    {
       "title":  "[React] Implémentation d'un useState en TDD",
-      "organization": "Meetup React Toulouse",
+      "organization": "React Toulouse",
       "url": "https://www.youtube.com/watch?v=S02ZYkh5sHk"
     },
     {
-      "title": "What if we tested our front-end?",
+      "title": "Et si nous testions notre front-end ?",
       "organization": "Meetup GDG Toulouse",
       "url": "https://www.youtube.com/watch?v=e1S5GTBN-5c"
     },
     {
       "title": "Bonnes pratiques avec Redux",
-      "organization": "Meetup React Toulouse",
+      "organization": "React Toulouse",
       "url": "https://www.youtube.com/watch?v=gwHr12YK9K0"
     }
   ],
@@ -301,13 +320,8 @@
         "MobX",
         "Android Play Store"
       ],
-      "context": "Application mobile de gestion des scores, déployée sur le Play Store Android.",
-      "links": [
-        {
-          "title": "Android play store",
-          "url": "https://play.google.com/store/apps/details?id=me.euzebe.scores"
-        }
-      ]
+      "context": "Application mobile de gestion des scores."
+
     },
     {
       "name": "meLe",
