@@ -20,6 +20,10 @@ const ExperiencesContainer = styled('div')`
   width: 90%;
 `;
 
+const JobContainer = styled("div")`
+  page-break-inside: avoid;
+`;
+
 const Footer = styled('div')`
   margin-bottom: 4rem;
 `;
@@ -28,12 +32,12 @@ function renderJob(job: Job): ReactChild {
     const to = job.to ? ` - ${job.to}` : '';
     const client = `${job.client} · ${job.from} ${to}`;
     return (
-        <div key={`${job.from}-${job.client}`}>
-            <h3>{job.title}</h3>
+        <JobContainer key={`${job.from}-${job.client}`}>
+            <h3 style={{textTransform: "capitalize"}}>{job.title}</h3>
             <h4>{client}</h4>
             {job.accomplishments
                 && job.accomplishments.map((a, index) => <AccomplishmentComponent key={index} {...a} />)}
-        </div>
+        </JobContainer>
     );
 }
 
