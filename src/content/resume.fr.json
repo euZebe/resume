@@ -6,11 +6,6 @@
   },
   "links": [
     {
-      "title": "github",
-      "url": "https://github.com/euzebe",
-      "icon": ""
-    },
-    {
       "title": "LinkedIn",
       "url": "https://www.linkedin.com/in/jean-martineau-figuette/",
       "icon": ""
@@ -32,12 +27,16 @@
         "title": "Développeur d'application mobile",
         "client": "Cofidoc",
         "from": "avril 2020",
-        "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Renault_logo.jpg/150px-Renault_logo.jpg",
+        "to": "décembre 2021",
+        "icon": "https://pbs.twimg.com/profile_images/974189367446114305/G3nAKbfX.jpg",
         "accomplishments": [
           {
-            "description": "Développement et maintenance en autonomie complète de l'application mobile Cofidoc Taxi qui permet aux taxis conventionnés CPAM de renseigner numériquement les transports médicaux réalisés, ceci afin de faciliter la facturation par Cofidoc.\nDéploiement sur les stores.",
+            "description": "En totale autonomie technique, j'ai réalisé l'application mobile Cofidoc Taxi, qui permet la saisie des trajets et la génération PDF d'attestations de transport. Propositions ergonomiques, développement, mise à disposition sur les stores Android et iOS, maintenance et support furent mon quotidien.",
             "tags": [
-              "React Native", "MongoDB", "AWS (authentification, stockage, lambdas)"
+              "ReactNative",
+              "MongoDB",
+              "AWS",
+              "mobile"
             ]
           }
         ]
@@ -50,9 +49,12 @@
         "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Renault_logo.jpg/150px-Renault_logo.jpg",
         "accomplishments": [
           {
-            "description": "Au sein d'une équipe de 4 personnes, j'ai contribué au développement d'une application web qui automatise les droits d'accès à un ensemble d'outils (Jira, Gitlab, Confluence, Artifactory...).\nEn tant que référent technique, j'ai formé et contribué au partage de connaissance entre les membres de l'équipe, et introduit des pratiques de développement telles que le pair-programming, le test-driven development (TDD) et les tests end-to-end.",
+            "description": "Au sein d'une équipe de 4 personnes, j'ai contribué au développement d'une application web qui automatise les droits d'accès à un ensemble d'outils (Jira, Gitlab, Confluence, Artifactory...).\nEn tant que référent technique, j'ai mis en œuvre l'event sourcing, formé et contribué au partage de connaissance entre les membres de l'équipe, et introduit des pratiques de développement telles que le pair-programming, le test-driven development (TDD) et les tests end-to-end.",
             "tags": [
-              "React", "Express", "Event-sourcing", "Cypress"
+              "React",
+              "Express",
+              "Event-sourcing",
+              "Cypress"
             ]
           }
         ]
@@ -67,7 +69,8 @@
           {
             "description": "Au sein d'une équipe distribuée de 6 personnes, partant d'un prototype d'application pour l'optimisation du remplissage des avions, je contribue à la réécriture de l'interface utilisateur.\nJ'interviens aussi en tant que référent front-end, et automatise les tests end-to-end.",
             "tags": [
-              "Angular", "Cypress"
+              "Angular",
+              "Cypress"
             ]
           }
         ]
@@ -212,7 +215,16 @@
           {
             "description": "Encadrement de projets de fin d'étude pour des élèves ingénieurs.\nEn binôme, les étudiants développaient des applications autonomes d'un système d'information hospitalier (admission, radiologie, pharmacie, facturation...).\n\nObjectifs des étudiants: \n- apprendre et appliquer les principes de développement en Java et en architecture orientée services, \n- découvrir et appliquer les standards de qualité de code tels que le Test Driven Development et JUnit, \n- mettre en pratiques les enseignements sur l'architecture des systèmes d'information de la santé.",
             "tags": [
-              "Java", "Hibernate", "Tomcat", "JUnit", "GWT", "MySQL", "SOA", "TDD", "Git", "MuleESB"
+              "Java",
+              "Hibernate",
+              "Tomcat",
+              "JUnit",
+              "GWT",
+              "MySQL",
+              "SOA",
+              "TDD",
+              "Git",
+              "MuleESB"
             ]
           }
         ]
@@ -320,8 +332,7 @@
         "MobX",
         "Android Play Store"
       ],
-      "context": "Application mobile de gestion des scores."
-
+      "context": "Application mobile de gestion des scores, déployée sur le Play Store Android."
     },
     {
       "name": "meLe",
