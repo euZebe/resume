@@ -49,7 +49,7 @@
         "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Renault_logo.jpg/150px-Renault_logo.jpg",
         "accomplishments": [
           {
-            "description": "Au sein d'une équipe de 4 personnes, j'ai contribué au développement d'une application web qui automatise les droits d'accès à un ensemble d'outils (Jira, Gitlab, Confluence, Artifactory...).\nEn tant que référent technique, j'ai mis en œuvre l'event sourcing, formé et contribué au partage de connaissance entre les membres de l'équipe, et introduit des pratiques de développement telles que le pair-programming, le test-driven development (TDD) et les tests end-to-end.",
+            "description": "Au sein d'une équipe de 4 personnes, j'ai contribué au développement d'une application web qui automatise les droits d'accès à un ensemble d'outils (Jira, Gitlab, Confluence, Artifactory...).\nEn tant que référent technique, j'ai mis en œuvre l'event sourcing et les tests end-to-end, contribué au partage de connaissance entre les membres de l'équipe, et introduit des pratiques de développement telles que le pair-programming, le test-driven development (TDD) et les tests end-to-end.",
             "tags": [
               "React",
               "Express",
@@ -309,7 +309,7 @@
       "url": "https://www.youtube.com/watch?v=mAi6IF8ZuXM"
     },
     {
-      "title":  "[React] Implémentation d'un useState en TDD",
+      "title": "[React] Implémentation d'un useState en TDD",
       "organization": "React Toulouse",
       "url": "https://www.youtube.com/watch?v=S02ZYkh5sHk"
     },
