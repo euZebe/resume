@@ -2,7 +2,7 @@ import * as React from 'react';
 import styled from 'react-emotion';
 import ResumeContentType from './model/ResumeContentType';
 import Job from './model/Job';
-import { ReactChild } from 'react';
+import {ReactChild} from 'react';
 import AccomplishmentComponent from './AccomplishmentComponent';
 import Formation from './model/Formation';
 import Realisation from './model/Realisation';
@@ -14,14 +14,14 @@ import Anchor from './Anchor';
 import Talk from "./model/Talk";
 
 const ExperiencesContainer = styled('div')`
-    text-align: start;
-    padding-left: 1rem;
-    margin-top: 2rem;
-    width: 90%;
+  text-align: start;
+  padding-left: 1rem;
+  margin-top: 2rem;
+  width: 90%;
 `;
 
 const Footer = styled('div')`
-    margin-bottom: 4rem;
+  margin-bottom: 4rem;
 `;
 
 function renderJob(job: Job): ReactChild {
@@ -32,7 +32,7 @@ function renderJob(job: Job): ReactChild {
             <h3>{job.title}</h3>
             <h4>{client}</h4>
             {job.accomplishments
-            && job.accomplishments.map((a, index) => <AccomplishmentComponent key={index} {...a} />)}
+                && job.accomplishments.map((a, index) => <AccomplishmentComponent key={index} {...a} />)}
         </div>
     );
 }
@@ -53,7 +53,7 @@ function renderRealisation(realisation: Realisation): ReactChild {
         <div key={realisation.name}>
             <h3>{realisation.name}</h3>
             <section>
-                {realisation.context && <Paragraph text={realisation.context} />}
+                {realisation.context && <Paragraph text={realisation.context}/>}
                 {realisation.objectives && renderObjectives(realisation.objectives)}
                 {realisation.links && renderProjectLinks(realisation.links)}
                 <TagsContainer>
@@ -83,7 +83,7 @@ function renderProjectLinks(links: Link[]): ReactChild {
             <h4>Links</h4>
             <ul>
                 {links.map(l => (
-                    <Anchor link={l.url} label={l.title} key={l.title} />
+                    <Anchor link={l.url} label={l.title} key={l.title}/>
                 ))}
             </ul>
         </React.Fragment>
@@ -92,17 +92,16 @@ function renderProjectLinks(links: Link[]): ReactChild {
 
 function renderTalk(talk: Talk): ReactChild {
     return (
-        <div key={talk.url}>
-            <h3><a href={talk.url}>{talk.title}</a></h3>
-            <section>{talk.organization}</section>
+        <div key={talk.url} style={{display: "flex", flexDirection: "row", alignItems: "center"}}>
+            <h3><a href={talk.url}>{talk.title}</a></h3>&nbsp;- {talk.organization}
         </div>
     )
 }
 
 class Main extends React.Component<ResumeContentType> {
     render() {
-        const { jobs, formations } = this.props.summary;
-        const { realisations, talks } = this.props;
+        const {jobs, formations} = this.props.summary;
+        const {realisations, talks} = this.props;
         return (
             <ExperiencesContainer>
                 <h1 id="talks">TALKS</h1>
@@ -113,7 +112,7 @@ class Main extends React.Component<ResumeContentType> {
                 {realisations.map(renderRealisation)}
                 <h1 id="formations">FORMATIONS</h1>
                 {formations.map(renderFormation)}
-                <Footer />
+                <Footer/>
             </ExperiencesContainer>
         );
     }
