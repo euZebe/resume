@@ -29,6 +29,43 @@
     "about": "Advocate of automating all that can be done, especially tests at every level.\nParticipant and organizer of software crafting and React events.",
     "jobs": [
       {
+        "title": "Web developer",
+        "client": "Renault Software Labs",
+        "from": "march 2022",
+        "to": "june 2023",
+        "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Renault_logo.jpg/150px-Renault_logo.jpg",
+        "accomplishments": [
+          {
+            "description": "[Banjo] I developed an application which helps monitoring map requests sent by Bosch in order to update their cartography solution.",
+            "tags": [
+              "React",
+              "NextJS",
+              "express",
+              "graphQL",
+              "BigQuery"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Mobile app developer",
+        "client": "Cofidoc",
+        "from": "april 2020",
+        "to": "december 2021",
+        "icon": "https://pbs.twimg.com/profile_images/974189367446114305/G3nAKbfX.jpg",
+        "accomplishments": [
+          {
+            "description": "In complete technical autonomy, I wrote the mobile app 'Cofidoc Taxi', allowing to save taxi courses for patients transport, and generate PDF certificates of transport.\nErgonomic proposals, development, release on the Android and iOS stores, maintenance and support were my daily routine.",
+            "tags": [
+              "ReactNative",
+              "MongoDB",
+              "AWS",
+              "mobile"
+            ]
+          }
+        ]
+      },
+      {
         "title": "Full-stack lead developer",
         "client": "Renault",
         "from": "june 2019",
@@ -36,7 +73,7 @@
         "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Renault_logo.jpg/150px-Renault_logo.jpg",
         "accomplishments": [
           {
-            "description": "In a 4-developer team, I contribute to the development of a web application for access rights automation.\nAs a lead developer, I help sharing knowledge and experience between team members, and introduces test driven development (TDD) end end-to-end testing in common practices.",
+            "description": "[SAM] In a 4-developer team, I contribute to the development of a web application for access rights automation.\nAs a lead developer, I help sharing knowledge and experience between team members, and introduces test driven development (TDD) end end-to-end testing in common practices.",
             "tags": [
               "React", "Express", "Event-sourcing", "Cypress"
             ]
@@ -293,62 +330,5 @@
       "url": "https://www.youtube.com/watch?v=gwHr12YK9K0"
     }
   ],
-  "realisations": [
-    {
-      "name": "Scores",
-      "tags": [
-        "ReactNative",
-        "MobX",
-        "Android Play Store"
-      ],
-      "context": "Scores sheet mobile app, deployed on Android Play Store.",
-      "links": [
-        {
-          "title": "Android play store page",
-          "url": "https://play.google.com/store/apps/details?id=me.euzebe.scores"
-        }
-      ]
-    },
-    {
-      "name": "Sumofages",
-      "tags": [
-        "React",
-        "Jest",
-        "e2eTests",
-        "Cypress",
-        "ContinuousIntegration",
-        "ContinuousDelivery"
-      ],
-      "context": "Web application to sum ages of several persons and give the date when this sum reaches the expected age.\nSplitted in a NPM library for computation and a single page application.",
-      "links": [
-        {
-          "title": "app",
-          "url": "https://euzebe.github.io/sumofages"
-        },
-        {
-          "title": "repository",
-          "url": "https://github.com/euzebe/sumofages"
-        },
-        {
-          "title": "NPM library",
-          "url": "https://www.npmjs.com/package/sumofages-lib"
-        }
-      ]
-    },
-    {
-      "name": "meLe",
-      "context": "Web application for draws, which picks a combination {participant, assigned} among all possible combinations, given restrictive criteria.",
-      "tags": [
-        "AngularJS",
-        "NodeJS",
-        "CouchDB",
-        "Yeoman",
-        "npm",
-        "Git",
-        "linux",
-        "Jacop",
-        "openshift"
-      ]
-    }
-  ]
+  "realisations": []
 }
