@@ -123,7 +123,7 @@ const AsideContent = (props: Props) => {
     <Container>
       <LangSwitch lang={props.lang} />
       <span>
-        <Image src="./images/me.jpg" />
+        <Image src="./images/me.png" />
       </span>
 
       <H3>Presentation</H3>

@@ -11,10 +11,12 @@ interface Props {
 
 const TagsContainer = styled('span')`
     display: flex; 
-    flex-flow: row wrap;
+    flex-flow: row;
+    flex-wrap: wrap;
     justify-content: center;
     @media print {
-        display: block;
+        width: 60vw;
+        
     }
 `;
 
