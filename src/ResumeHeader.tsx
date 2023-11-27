@@ -15,7 +15,7 @@ const TagsContainer = styled('span')`
     flex-wrap: wrap;
     justify-content: center;
     @media print {
-        width: 60vw;
+        width: 80vw;
         
     }
 `;
