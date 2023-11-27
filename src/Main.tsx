@@ -112,8 +112,14 @@ class Main extends React.Component<ResumeContentType> {
                 {talks.map(renderTalk)}
                 <h1 id="experiences">EXPERIENCES</h1>
                 {jobs.map(renderJob)}
-                <h1 id="side-projects">SIDE PROJECTS</h1>
-                {realisations.map(renderRealisation)}
+                {
+                    realisations && realisations.length ?
+                        <>
+                            <h1 id="side-projects">SIDE PROJECTS</h1>
+                            {realisations.map(renderRealisation)}
+                        </>
+                    : null
+                }
                 <h1 id="formations">FORMATIONS</h1>
                 {formations.map(renderFormation)}
                 <Footer/>

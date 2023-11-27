@@ -24,6 +24,25 @@
     "about": "Partisan de l'automatisation de tout ce qui peut l'être, notamment les tests à tout niveau.\nParticipant et organisateur d'événements autour du Software Crafting et de React.",
     "jobs": [
       {
+        "title": "Développeur web",
+        "client": "Renault Software Labs",
+        "from": "mars 2022",
+        "to": "juin 2023",
+        "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Renault_logo.jpg/150px-Renault_logo.jpg",
+        "accomplishments": [
+          {
+            "description": "[Banjo] En autonomie, développement d'une application de surveillance des tâches de cartographie demandées par Bosch.\nImplémentation du back et du front.",
+            "tags": [
+              "React",
+              "NextJS",
+              "express",
+              "graphQL",
+              "BigQuery"
+            ]
+          }
+        ]
+      },
+      {
         "title": "Développeur d'application mobile",
         "client": "Cofidoc",
         "from": "avril 2020",
@@ -49,7 +68,7 @@
         "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Renault_logo.jpg/150px-Renault_logo.jpg",
         "accomplishments": [
           {
-            "description": "Au sein d'une équipe de 4 personnes, j'ai contribué au développement d'une application web qui automatise les droits d'accès à un ensemble d'outils (Jira, Gitlab, Confluence, Artifactory...).\nEn tant que référent technique, j'ai mis en œuvre l'event sourcing et les tests end-to-end, contribué au partage de connaissance entre les membres de l'équipe, et introduit des pratiques de développement telles que le pair-programming, le test-driven development (TDD) et les tests end-to-end.",
+            "description": "[SAM] Au sein d'une équipe de 4 personnes, j'ai contribué au développement d'une application web qui automatise les droits d'accès à un ensemble d'outils (Jira, Gitlab, Confluence, Artifactory...).\nEn tant que référent technique, j'ai mis en œuvre l'event sourcing et les tests end-to-end, contribué au partage de connaissance entre les membres de l'équipe, et introduit des pratiques de développement telles que le pair-programming, le test-driven development (TDD) et les tests end-to-end.",
             "tags": [
               "React",
               "Express",
@@ -325,29 +344,6 @@
     }
   ],
   "realisations": [
-    {
-      "name": "Scores",
-      "tags": [
-        "ReactNative",
-        "MobX",
-        "Android Play Store"
-      ],
-      "context": "Application mobile de gestion des scores, déployée sur le Play Store Android."
-    },
-    {
-      "name": "meLe",
-      "context": "application web de tirage au sort, qui choisit une combinaison {participant, personne affectée} parmi toutes celles possibles, en fonction de critères restrictifs.",
-      "tags": [
-        "AngularJS",
-        "NodeJS",
-        "CouchDB",
-        "Yeoman",
-        "npm",
-        "Git",
-        "linux",
-        "Jacop",
-        "openshift"
-      ]
-    }
+
   ]
 }
