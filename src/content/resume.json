@@ -6,28 +6,34 @@
   },
   "links": [
     {
-      "title": "github",
-      "url": "https://github.com/euzebe",
-      "icon": ""
-    },
-    {
       "title": "LinkedIn",
       "url": "https://www.linkedin.com/in/jean-martineau-figuette/",
       "icon": ""
     }
   ],
   "summary": {
-    "title": "Freelance senior engineer, technical leader",
+    "title": "Freelance software engineer, lead front-end developer",
     "tags": [
       "React",
-      "Angular",
       "NodeJS",
-      "Cypress",
       "Test Driven Development",
       "Software crafting"
     ],
     "about": "Advocate of automating all that can be done, especially tests at every level.\nParticipant and organizer of software crafting and React events.",
     "jobs": [
+      {
+        "title": "web developer",
+        "client": "Ampere Software Technology",
+        "from": "january 2024",
+        "to": "june 2025",
+        "icon": "",
+        "accomplishments": [
+          {
+            "description": "[Caiman] As part of a team of 5 to 7 people, development of a web application to create software configurations for vehicles, whose aim is to collect on-board data.\n\nI acted as a front-end technical advisor, sharing my knowledge and experience through one-on-one mentoring and formal presentations to help less experienced colleagues develop their skills.\n\nEnglish-speaking environment required due to the presence of Indian colleagues.",
+            "tags": ["React", "Koa", "GraphQL", "mongoDB"]
+          }
+        ]
+      },
       {
         "title": "Web developer",
         "client": "Renault Software Labs",

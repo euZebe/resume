@@ -12,7 +12,7 @@
     }
   ],
   "summary": {
-    "title": "Développeur web sénior, référent technique",
+    "title": "Développeur web sénior, référent technique front-end",
     "tags": [
       "React",
       "React Native",
@@ -22,6 +22,19 @@
     ],
     "about": "Partisan de l'automatisation de tout ce qui peut l'être, notamment les tests à tout niveau.\nParticipant et organisateur d'événements autour du Software Crafting et de React.",
     "jobs": [
+      {
+        "title": "web developer",
+        "client": "Ampere Software Technology",
+        "from": "january 2024",
+        "to": "june 2025",
+        "icon": "",
+        "accomplishments": [
+          {
+            "description": "[Caiman] au sein d'une équipe de 5 à 7 personnes, développement d'une application web pour créer des configurations logicielles destinées aux véhicules, ayant pour but de remonter des données de bord.\n\nJ'avais un rôle de référent technique front-end, incluant le partage de savoir et d'expérience en binôme et par présentations formelles afin d'aider les collègues moins expérimentés à monter en compétence.\n\nEnvironnement anglophone nécessité par la présence de collègues anglophones.",
+            "tags": ["React", "Koa", "GraphQL", "mongoDB"]
+          }
+        ]
+      },
       {
         "title": "Développeur web",
         "client": "Renault Software Labs",
