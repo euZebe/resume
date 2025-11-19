@@ -14,7 +14,7 @@ import Anchor from './Anchor';
 import Talk from "./model/Talk";
 
 const ExperiencesContainer = styled('div')`
-  text-align: start;
+  text-align: justify;
   padding-left: 1rem;
   margin-top: 2rem;
   width: 90%;
